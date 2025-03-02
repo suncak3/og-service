@@ -1,0 +1,99 @@
+/* Header.css */
+.header {
+    background-color: #0f5c64; /* Цвет фона (teal-800) */
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 16.82%;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-contact div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.header-main {
+    background-color: #C6D7EE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16.82%;
+}
+
+.header-logo {
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-info {
+    display: flex;
+    gap: 40px;
+}
+
+.header-info div {
+    text-align: left;
+}
+
+.header-info p:first-child {
+    color: #F44336;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+.header-info p:last-child {
+    margin: 0;
+    color: #186D77;
+    font-weight: 600;
+}
+
+.header-button {
+    background-color: #0f5c64;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 18px 39px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #0f5c64;
+    display: flex;
+    justify-content: left;
+    padding: 2px 16%;
+}
+
+.navbar a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 20px;
+}
+
+.navbar a.active {
+    color: #F44336;
+    padding-bottom: 18px;
+    border-bottom: 3px solid #F44336;
+}
+
+@media (max-width: 1701px) {
+    .header-button {
+        font-size: 1rem;
+        padding: 12px 26px;
+    }
+}

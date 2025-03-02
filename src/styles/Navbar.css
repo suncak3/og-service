@@ -1,0 +1,79 @@
+/* Основной стиль меню */
+.navbar {
+    background-color: #0f5c64;
+    display: flex;
+    justify-content: left;
+    padding: 0px 16.82%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav-item a:hover {
+    color: #F44336;
+    border-bottom: 2px solid #d64541;
+}
+
+/* Выпадающее меню */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #0f5c64;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Показываем меню при наведении */
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Дополнительные стили для PRODUCTS */
+.dropdown-menu .dropdown-column {
+    padding: 10px;
+    color: white;
+}
+
+.dropdown-menu h4 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.dropdown-menu li a:hover {
+    color: #F44336;
+}
