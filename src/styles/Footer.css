@@ -1,0 +1,40 @@
+footer {
+    background-color: #186D77;
+    color: white;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-column h3 {
+    color: #F44336;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-grid {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-bottom {
+    background-color: #B0E0E6;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    font-size: 14px;
+}
