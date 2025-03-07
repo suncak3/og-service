@@ -1,5 +1,5 @@
 footer {
-    background-color: #186D77;
+    background-color: #003B71;
     color: white;
 }
 
@@ -15,7 +15,7 @@ footer {
 }
 
 .footer-column h3 {
-    color: #F44336;
+    color: #ED7D2A;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -23,7 +23,7 @@ footer {
 
 .footer-column p {
     margin: 5px 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .footer-grid {
@@ -32,9 +32,9 @@ footer {
 }
 
 .footer-bottom {
-    background-color: #B0E0E6;
+    background-color: #3478B5;
     text-align: center;
     padding: 15px;
-    color: black;
+    color: white;
     font-size: 14px;
 }

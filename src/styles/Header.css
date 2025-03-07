@@ -1,6 +1,6 @@
 /* Header.css */
 .header {
-    background-color: #0f5c64; /* Цвет фона (teal-800) */
+    background-color: #003B71; /* Цвет фона (teal-800) */
     color: white;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .header-main {
-    background-color: #C6D7EE;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,12 +55,12 @@
 }
 .header-info p:last-child {
     margin: 0;
-    color: #186D77;
+    color: #003B71;
     font-weight: 600;
 }
 
 .header-button {
-    background-color: #0f5c64;
+    background-color: #003B71;
     color: white;
     font-weight: bold;
     font-size: 1.25rem;

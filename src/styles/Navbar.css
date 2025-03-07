@@ -1,6 +1,6 @@
 /* Основной стиль меню */
 .navbar {
-    background-color: #0f5c64;
+    background-color: #003B71;
     display: flex;
     justify-content: left;
     padding: 0px 16.82%;
@@ -34,7 +34,7 @@
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #0f5c64;
+    background-color: #003B71;
     padding: 10px;
     top: 100%;
     left: 0;
