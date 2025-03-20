@@ -1,6 +1,6 @@
 /* Header.css */
 .header {
-    background-color: #0f5c64; /* Цвет фона (teal-800) */
+    background-color: #003B71;
     color: white;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .header-main {
-    background-color: #C6D7EE;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +36,12 @@
 .header-logo {
     text-align: center;
     font-weight: bold;
+}
+
+.logo-text{
+    color: #003B71;
+    font-weight: 700;
+    font-size: 3rem;
 }
 
 .header-info {
@@ -55,12 +61,12 @@
 }
 .header-info p:last-child {
     margin: 0;
-    color: #186D77;
+    color: #003B71;
     font-weight: 600;
 }
 
 .header-button {
-    background-color: #0f5c64;
+    background-color: #003B71;
     color: white;
     font-weight: bold;
     font-size: 1.25rem;
@@ -68,13 +74,6 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.navbar {
-    background-color: #0f5c64;
-    display: flex;
-    justify-content: left;
-    padding: 2px 16%;
 }
 
 .navbar a {
@@ -91,9 +90,37 @@
     border-bottom: 3px solid #F44336;
 }
 
-@media (max-width: 1701px) {
+@media (max-width: 1790px) {
     .header-button {
         font-size: 1rem;
         padding: 12px 26px;
+    }
+    .logo-text{
+        font-size: 2.75rem;
+    }
+}
+
+@media (max-width: 1701px) {
+    .header-button {
+        padding: 10px 23px;
+    }
+}
+
+@media (max-width: 1640px) {
+    .header-top{
+        padding: 10px 13%;
+    }
+    .header-main{
+        padding: 20px 13%;
+    }
+
+}
+
+@media (max-width: 1521px) {
+    .header-top{
+        padding: 10px 10%;
+    }
+    .header-main{
+        padding: 20px 10%;
     }
 }

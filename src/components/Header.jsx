@@ -14,7 +14,7 @@ const Header = () => {
             </div>
             <div className="header-main">
                 <div className="header-logo">
-                    <img src="/assets/Logo.png" alt="logo" />
+                    <p className="logo-text">OG Services</p>
                 </div>
 
                 <div className="header-info">
