@@ -70,6 +70,12 @@
     cursor: pointer;
 }
 
+.logo-text{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #003B71;
+}
+
 .navbar {
     background-color: #0f5c64;
     display: flex;
@@ -95,5 +101,86 @@
     .header-button {
         font-size: 1rem;
         padding: 12px 26px;
+    }
+    .logo-text{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 1640px) {
+    .header-top{
+        padding: 10px 13%;
+    }
+    .logo-text{
+        font-size: 2.25rem;
+    }
+    .header-main{
+        padding: 20px 13%;
+    }
+}
+
+@media (max-width: 1521px) {
+    .header-top{
+        padding: 10px 10%;
+    }
+    .logo-text{
+        font-size: 2rem;
+    }
+    .header-main{
+        padding: 20px 10%;
+    }
+}
+
+@media (max-width: 1302px) {
+    .header-top{
+        padding: 10px 8%;
+    }
+    .header-main{
+        padding: 20px 8%;
+    }
+}
+
+@media (max-width: 1231px) {
+    .header-top{
+        padding: 10px 5%;
+    }
+    .header-main{
+        padding: 20px 5%;
+    }
+}
+
+@media (max-width: 1141px) {
+    .header-info p:first-child {
+        font-size: 1.75rem;
+    }
+    .header-info{
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1081px) {
+    .header-top{
+        padding: 10px 3%;
+    }
+    .header-main{
+        padding: 20px 3%;
+    }
+}
+
+@media (max-width: 790px) {
+    .nav-item a {
+        font-size: 16px;
+    }
+    .logo-text{
+        font-size: 1rem;
+    }
+    .header-info p:first-child {
+        font-size: 1.25rem;
+    }
+    .header-info p:last-child {
+        font-size: .75rem;
+    }
+    .header-button {
+        font-size: .75rem;
+        padding: 10px 15px;
     }
 }
