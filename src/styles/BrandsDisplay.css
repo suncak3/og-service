@@ -1,0 +1,33 @@
+.brands-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .brand-logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .brand-logo-link:hover {
+    transform: scale(1.05);
+  }
+  
+  .brand-logo-img {
+    max-width: 150px;
+    max-height: 60px;
+    object-fit: contain;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .brands-display {
+      justify-content: center;
+      gap: 3rem;
+    }
+  }

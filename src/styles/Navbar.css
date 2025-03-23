@@ -1,117 +1,109 @@
-/* Основной стиль меню */
 .navbar {
     background-color: #003B71;
-    display: flex;
-    justify-content: left;
-    padding: 2px 16%;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
     padding: 0;
-}
-
-.nav-item {
-    position: relative;
-}
-
-.nav-item a {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 15px;
-}
-
-.nav-item a:hover {
-    color: #F44336;
-    border-bottom: 2px solid #d64541;
-}
-
-/* Выпадающее меню */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #003B71;
-    padding: 10px;
-    top: 100%;
-    left: 0;
-    min-width: 200px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Показываем меню при наведении */
-.dropdown:hover .dropdown-menu {
+  }
+  
+  .nav-container {
     display: flex;
-    flex-direction: column;
-}
-
-/* Дополнительные стили для PRODUCTS */
-.dropdown-menu .dropdown-column {
-    padding: 10px;
+    padding: 0 16%;
+  }
+  
+  .nav-container a {
     color: white;
-}
-
-.dropdown-menu h4 {
-    color: white;
+    text-decoration: none;
+    font-weight: bold;
     font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.dropdown-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.dropdown-menu li a {
+    padding: 18px 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  /* Professional hover effect with multiple elements */
+  .nav-container a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #F44336;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    z-index: 1;
+  }
+  
+  .nav-container a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: height 0.3s ease;
+    z-index: 0;
+  }
+  
+  .nav-container a:hover {
     color: white;
-    font-size: 14px;
-    text-decoration: none;
-    display: block;
-    padding: 5px 0;
-}
-
-.dropdown-menu li a:hover {
+  }
+  
+  .nav-container a:hover::before {
+    width: 80%;
+  }
+  
+  .nav-container a:hover::after {
+    height: 100%;
+  }
+  
+  /* Active state styling */
+  .nav-container a.active {
     color: #F44336;
-}
-
-@media (max-width: 1640px) {
-    .navbar{
-        padding: 2px 13%;
+    border-bottom: 3px solid #F44336;
+  }
+  
+  .nav-container a.active::before,
+  .nav-container a.active::after {
+    display: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1400px) {
+    .nav-container {
+      padding: 0 8%;
     }
-}
-
-@media (max-width: 1521px) {
-    .navbar{
-        padding: 2px 10%;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      padding: 0;
     }
-}
-
-@media (max-width: 1302px) {
-    .navbar{
-        padding: 2px 8%;
-    }
-}
-@media (max-width: 1231px) {
-    .navbar{
-        padding: 2px 5%;
-    }
-}
-@media (max-width: 1081px) {
-    .navbar {
-        padding: 2px 3%;
-    }
-}
-
-@media (max-width: 790px) {
-    .nav-item a {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 481px) {
     
-}
+    .navbar a {
+      text-align: center;
+      padding: 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-container a::before {
+      bottom: auto;
+      left: 0;
+      top: 50%;
+      width: 3px;
+      height: 0;
+      transform: translateY(-50%);
+      transition: height 0.3s ease;
+    }
+    
+    .nav-container a:hover::before {
+      width: 3px;
+      height: 70%;
+    }
+    
+    .navbar a.active {
+      border-bottom: 1px solid #e0e0e0;
+      border-left: 4px solid #F44336;
+    }
+  }

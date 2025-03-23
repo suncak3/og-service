@@ -1,100 +1,151 @@
+import { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import logo from "../assets/logos/Logo.png"
+import phone from "../assets/icons/Phone.png"
+import location from "../assets/icons/Location.png"
+import clock from "../assets/icons/Clock.png"
 import "../styles/Header.css";
-import Navbar from "./Navbar.jsx";
-import {useEffect, useState} from "react";
 
 const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const navigate = useNavigate();
+
+    // Handle scroll effect
     useEffect(() => {
-        if (isOpen) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "";
-        }
-    }, [isOpen]);
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
+    };
+
+    // Fixed function to handle mobile navigation
+    const closeMenuAndNavigate = (path) => {
+        setMobileMenuOpen(false); // Close the menu first
+        setTimeout(() => {
+          navigate(path); // Navigate after a small delay to ensure menu closes smoothly
+        }, 50);
+    };
+
+    const handleGetQuote = () => {
+        navigate('/contact'); // Navigate to contact page when Get Quote is clicked
+        setMobileMenuOpen(false); // Close menu if open
+    };
+
     return (
-        <div className="Header">
-            <header className="header">
-                <div className="header-top">
-                    <div className="header-contact">
-                        <div><img src="/assets/icons/phone.png"/> +7 777 777 77 77</div>
-                        <div className="header-mobile-off"><img src="/assets/icons/clock.png"/>Mon - Fri 09:00 - 17:00
-                        </div>
-                        <div className="header-mobile-off"><img src="/assets/icons/location.png"/> Astana, st. Konaeva
-                            33, office 303
-                        </div>
+        <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+            {/* Top info bar - hidden on mobile */}
+            <div className="header-top">
+                <div className="header-contact">
+                    <div>
+                        <img src={phone} alt="phone icon"/> 
+                        +7 777 777 77 77
                     </div>
-                    <a href="#"><img src="/assets/icons/mail.png"/></a>
+                    <div>
+                        <img src={clock} alt="clock icon"/>
+                        Mon - Fri 09:00 - 17:00
+                    </div>
+                    <div>
+                        <img src={location} alt="location icon"/> 
+                        Astana, st. Konaeva 33, office 303
+                    </div>
                 </div>
-                <div className="header-main">
-                    <div className="header-logo">
-                        <p className="logo-text">OG Services</p>
-                    </div>
+                {/* Mail icon removed */}
+            </div>
+            
+            {/* Main header section */}
+            <div className="header-main">
+                <Link to="/" className="header-logo">
+                    <img src={logo} alt="OG Services logo" />
+                </Link>
 
-                    <div className="header-info">
-                        <div>
-                            <p>Email us</p>
-                            <p>sales@ogservices.com</p>
-                        </div>
-                        <div className="header-mobile-off">
-                            <p>Address</p>
-                            <p>Astana, st. Konaeva 33, office 303</p>
-                        </div>
-                        <div className="header-mobile-off">
-                            <p>Call us</p>
-                            <p>+7 777 777 77 77</p>
-                        </div>
+                {/* Desktop header info - hidden on mobile */}
+                <div className="header-info">
+                    <div>
+                        <p className="info-label">Email us</p>
+                        <p className="info-value">sales@ogservices.com</p>
                     </div>
+                    <div>
+                        <p className="info-label">Address</p>
+                        <p className="info-value">Astana, st. Konaeva 33, office 303</p>
+                    </div>
+                    <div>
+                        <p className="info-label">Call us</p>
+                        <p className="info-value">+7 777 777 77 77</p>
+                    </div>
+                    <button className="header-button" onClick={handleGetQuote}>GET QUOTE</button>
+                </div>
 
-                    <button className="header-button">GET QUOTE</button>
-                </div>
-                <Navbar/>
-            </header>
-            <div className="header-mobile">
-                <div className="header-mobile-top">
-                    <div className="header-contact">
-                        <div><img src="/assets/icons/phone.png"/> +7 777 777 77 77</div>
-                        <div><img src="/assets/icons/clock.png"/>Mon - Fri 09:00 - 17:00
-                        </div>
-                        <br/>
-                        <div><img src="/assets/icons/location.png"/> Astana, st. Konaeva
-                            33, office 303
-                        </div>
-                    </div>
-                </div>
-                <div className="burger-menu-bkg">
-                    <div className="burger-menu">
-                        <nav>
-                            <div className="nav-container">
-                                <button className="menu-button" onClick={() => setIsOpen(!isOpen)}>
-                                    <span className={`bar ${isOpen ? "open" : ""}`}></span>
-                                    <span className={`bar ${isOpen ? "open" : ""}`}></span>
-                                    <span className={`bar ${isOpen ? "open" : ""}`}></span>
-                                </button>
-                            </div>
-                        </nav>
-                    </div>
-                    <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
-                        <ul>
-                            <li><a href="#" className="menu-item">Home</a></li>
-                            <li><a href="#" className="menu-item">About</a></li>
-                            <li><a href="#" className="menu-item">Products</a></li>
-                            <li><a href="#" className="menu-item">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="logo_header">
-                    <p className="logo-text">OG Services</p>
-                    <div className="email-block">
-                        <div className="email-title">
-                            Email us
-                        </div>
-                        <div className="email-name">
-                            sales@ogservices.com
-                        </div>
+                {/* Mobile burger menu */}
+                <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+                    <div className={`burger ${mobileMenuOpen ? 'active' : ''}`}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
             </div>
-        </div>
+
+            {/* Navigation - Desktop visible, mobile in dropdown */}
+            <nav className={`navbar ${mobileMenuOpen ? 'mobile-open' : ''}`}>
+                <div className="nav-container">
+                    {/* Fixed mobile navigation links */}
+                    <a href="/" onClick={(e) => {
+                        e.preventDefault();
+                        closeMenuAndNavigate('/');
+                    }}>HOME</a>
+                    
+                    <a href="/about" onClick={(e) => {
+                        e.preventDefault();
+                        closeMenuAndNavigate('/about');
+                    }}>ABOUT</a>
+                    
+                    <a href="/products" onClick={(e) => {
+                        e.preventDefault();
+                        closeMenuAndNavigate('/products');
+                    }}>PRODUCTS</a>
+                    
+                    <a href="/contact" onClick={(e) => {
+                        e.preventDefault();
+                        closeMenuAndNavigate('/contact');
+                    }}>CONTACT US</a>
+                </div>
+
+                {/* Mobile-only contact info shown in menu */}
+                <div className="mobile-contact-info">
+                    <div className="mobile-contact-item">
+                        <img src="/assets/icons/phone.png" alt="phone icon"/>
+                        <p>+7 777 777 77 77</p>
+                    </div>
+                    <div className="mobile-contact-item">
+                        <img src="/assets/icons/mail.png" alt="mail icon"/>
+                        <p>sales@ogservices.com</p>
+                    </div>
+                    <div className="mobile-contact-item">
+                        <img src="/assets/icons/location.png" alt="location icon"/>
+                        <p>Astana, st. Konaeva 33, office 303</p>
+                    </div>
+                    <button className="mobile-quote-btn" onClick={handleGetQuote}>GET QUOTE</button>
+                </div>
+            </nav>
+
+            {/* Overlay for mobile menu */}
+            {mobileMenuOpen && (
+                <div className="mobile-menu-overlay" onClick={toggleMobileMenu}></div>
+            )}
+        </header>
     );
 };
 
