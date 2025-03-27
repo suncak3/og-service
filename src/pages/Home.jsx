@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import belts from "../assets/images/drive-belts.png"
+import back from '../assets/images/background.jpg'
 import belts_2 from "../assets/images/drive-belts-2.png"
 import filters from "../assets/images/filters.png"
 import experience from "../assets/icons/experience.png"
@@ -43,14 +44,14 @@ const Home = () => {
     <main className="home-page">
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hexagon-pattern"></div>
+        <img loading="lazy" src={back} alt="Background img" className="hexagon-pattern"></img>
         <div className="hero-content animate-on-scroll">
           <h1>Filters refine your choices, helping you find exactly what you need with ease and precision.</h1>
           <div className="hero-divider"></div>
           <Link to="/products" className="btn btn-hero">Explore Our Products</Link>
         </div>
         <div className="hero-image animate-on-scroll">
-          <img src={belts} alt="Industrial belts" />
+          <img loading="lazy" src={belts} alt="Industrial belts" />
         </div>
       </section>
 
