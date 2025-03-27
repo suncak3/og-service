@@ -20,7 +20,6 @@ import optibelt from "../assets/logos/optibelt.png";
 import dunham from "../assets/logos/dunham.png";
 
 // Import category images
-// Note: Replace these with your actual image paths
 import filtersImage from "../assets/images/filters.png";
 import beltsImage from "../assets/images/drive-belts.png";
 
@@ -103,156 +102,213 @@ const Products = () => {
   const productTypeDescriptions = {
     process: (
       <>
-        <h2>Process Filters</h2>
+        <h2>Process Filtration</h2>
+        <div className="highlight-box">
+          <p>Industry-Leading Technology for Liquid & Gas Applications</p>
+        </div>
+        
         <p>
-          OG Services provides process filtration solutions for gases and liquids wherever
-          they come into contact with the process during manufacturing, whether it be for
-          chemical, biological, pharmaceutical, electronics, food & beverage, paint, packaging,
-          air gas or high pressure water injection filtration applications.
+          OG Services delivers process filtration solutions that maintain efficiency even in extreme conditions.
+          Our systems are designed for pharmaceutical purity to industrial ruggedness, ensuring consistent performance
+          when you need it most.
         </p>
-        <p>
-          Where quality requirements are exceptionally high OG Services has a selection of
-          process filters and housings which will enable you to reach maximum purity standards.
-          OG Services' process filtration systems are used daily in some of the most arduous
-          conditions...
-        </p>
-        <ul>
-          <li>Drilling Platforms...</li>
-          <li>Petrochemical Industry...</li>
-          <li>Electronics...</li>
-          <li>General Industry...</li>
-        </ul>
-        <p>
-          Our proposals can include CAD drawings, projected future running costs and
-          dedicated stock holding of replacement elements. OG Services' Technical
-          department are available on a 24 hour basis to discuss your process issues and offer
-          cost effective solutions regardless of the scenario.
-        </p>
-        <ul>
-          <li>Replacement Elements & Housings Technical Advice</li>
-          <li>System Design</li>
-        </ul>
+        
+        <div className="two-columns">
+          <div>
+            <h4>Industries We Serve:</h4>
+            <ul>
+              <li>Offshore & Marine</li>
+              <li>Chemical Processing</li>
+              <li>Semiconductor Manufacturing</li>
+              <li>Food & Beverage Production</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Key Capabilities:</h4>
+            <ul>
+              <li>Custom Engineering Services</li>
+              <li>Performance Cost Analysis</li>
+              <li>Inventory Management</li>
+              <li>24/7 Technical Support</li>
+            </ul>
+          </div>
+        </div>
       </>
     ),
     hvac: (
       <>
         <h2>HVAC Filtration</h2>
+        <div className="highlight-box">
+          <p>Creating Healthier Indoor Environments Through Advanced Air Purification</p>
+        </div>
+        
         <p>
-          Our product scope is broad: from high-efficiency air filters, to dust collectors, to gas turbine filtration systems. We offer the most advanced technology and skilled application expertise for cleaning air in facilities and processes as diverse as homes, hospitals, industrial plants, commercial buildings, schools, mailrooms and nuclear reactors, as well as gas turbine and diesel engines.
+          Our HVAC filtration solutions combine innovative design with premium materials, 
+          delivering exceptional air quality in facilities ranging from office buildings to critical care environments.
         </p>
+        
+        <h4>Performance Categories:</h4>
+        <ul>
+          <li><strong>Primary Filtration:</strong> Coarse particle capture for equipment protection and pre-filtering</li>
+          <li><strong>Secondary Systems:</strong> F5-F9 rated pocket filters with extended service intervals</li>
+          <li><strong>High-Performance:</strong> Complete turbine intake systems with acoustic treatment</li>
+        </ul>
+        
         <p>
-          The most common use of air filter products is for commercial, institutional and industrial applications, installed in the Heating Ventilation and Air Conditioning (HVAC) systems. Coarse filters may be used both as primary air filters to protect HVAC components (coils, fans, duct work) from unnecessary dust build-up or to protect more expensive secondary air filters from premature dust loading and replacement. Pocket filters are used as standard equipment for air handling units in HVAC systems. These filters are classified within the range from F5 up to F9. Due to their robust pocket design they are particularly suited for difficult operating conditions.  
-        </p>      
-        <p>
-          High Performance Air Filtration: Air intake systems for gas turbines, high performance compressors and diesels comprising filtration, cooling and sound attenuation are completed with exhaust gas silencing and acoustic enclosures, providing a complete system for the user, OEM or packager. OG Services has total system product capabilities, combined with state-of-the-art engineering
+          <strong>Engineering Excellence:</strong> Our systems integrate filtration, cooling, and sound management 
+          technologies, creating complete solutions for demanding industrial applications.
         </p>
       </>
     ),
     compressed: (
       <>
         <h2>Compressed Air Filtration</h2>
-        <p>Compressed air filters for all applications</p>
-        <ul>
-          <li>FRL's, filters, regulators, lubricators, combinations & modular</li>
-          <li>Compressor intake filters</li>
-          <li>Coalescing filters, oil removal, water removal</li>
-          <li>Carbon adsorber filters, odor removal</li>
-          <li>Particulate removal filters</li>
-          <li>Combination particulate and coalescing models</li>
-          <li>ASME large capacity models available with flows to 25000 scfm</li>
-          <li>Stainless steel filters available</li>
-          <li>High pressure models to 5000 psig available.</li>
-          <li>Low pressure drop models.</li>
-          <li>Accessories for all models available, delta P gauges, indicators, internal drains and external drains.</li>
-          <li>Intake Filters and Intake Filter Silencers</li>
-        </ul>
+        <div className="highlight-box">
+          <p>Pure Air Solutions for Critical Industrial Processes</p>
+        </div>
+        
+        <div className="two-columns">
+          <div>
+            <h4>Protection Technologies</h4>
+            <ul>
+              <li>Complete FRL assemblies with modular configuration</li>
+              <li>Advanced coalescing for moisture & oil removal</li>
+              <li>Precision particulate filtration systems</li>
+              <li>Carbon adsorption for vapor & odor elimination</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4>Performance Specifications</h4>
+            <ul>
+              <li>ASME-certified for flows up to 25,000 scfm</li>
+              <li>Energy-optimized low pressure drop designs</li>
+              <li>High-pressure rated systems (5,000 psig)</li>
+              <li>Stainless construction for corrosive environments</li>
+            </ul>
+          </div>
+        </div>
       </>
     ),
     hydraulic: (
       <>
         <h2>Hydraulic Filtration</h2>
+        <div className="highlight-box">
+          <p>Protect, Extend, Perform: The Power of Clean Hydraulic Systems</p>
+        </div>
+        
         <p>
-          Contamination is the number one cause of failure in hydraulic and lubrication systems.
-          Failures can cause downtime, component and fluid replacement, as well as higher
-          maintenance charges. OG Services will provide positive protection against
-          contamination, giving you predictable reliability for your hydraulic systems and it's
-          components.
+          Contamination is the primary enemy of hydraulic system performance. Our advanced filtration solutions 
+          protect your equipment investment, minimize downtime, and extend fluid life through strategic 
+          contaminant control.
         </p>
-        <p>
-          OG Services will provide you with a cost effective solution to resolve every
-          possible scenario
-        </p>
-        <ul>
-          <li>Replacement Elements</li>
-          <li>System Design</li>
-          <li>Upgrade & Redesign</li>
-          <li>Problem Solving</li>
-          <li>Offline Filtration Systems</li>
-          <li>Oil Sampling & Analysis</li>
-          <li>High Pressure Stainless Steel Housings</li>
-          <li>OEM Spares</li>
-        </ul>
-        <p>OG Services The Complete Hydraulic Filtration Service</p>
+        
+        <div className="two-columns">
+          <div>
+            <h4>System Protection</h4>
+            <ul>
+              <li>Premium replacement elements</li>
+              <li>Stainless pressure housings</li>
+              <li>OEM-compatible components</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4>Performance Enhancement</h4>
+            <ul>
+              <li>System redesign & upgrades</li>
+              <li>Offline filtration units</li>
+              <li>Oil sampling & testing</li>
+            </ul>
+          </div>
+        </div>
+        
+        <p><strong>OG Services:</strong> Your complete hydraulic filtration partner from component supply 
+           to system design and fluid management.</p>
       </>
     ),
     dryers: (
       <>
-        <h2>Filter Dryers</h2>
+        <h2>Compressed Air Dryers</h2>
+        <div className="highlight-box">
+          <p>Moisture-Free Air for Critical Applications</p>
+        </div>
+        
         <p>
-          The air delivered from a modern day compressor can contain... Water... Vapour... Oil &
-          various other contaminants. OG Services will provide you with the Air Dryer to
-          maximise the compressed air generated and provide additional protection to your
-          process.
+          Moisture in compressed air systems leads to corrosion, equipment failure, and product contamination. 
+          Our specialized drying systems eliminate these risks, delivering consistently dry air that meets 
+          your most demanding specifications.
         </p>
-        <ul>
-          <li>Provide clean dry compressed air to process instrumentation</li>
-          <li>Offer dewpoints to -40°F (-40°C)</li>
-          <li>Membrane Air Dryers offer dewpoints to 35°F (2°C) with unique energy saving technology</li>
-          <li>Unattended 24 hour operation</li>
-          <li>Explosion-proof and require no electricity</li>
-          <li>Easy to operate and maintain</li>
-          <li>Silent operation</li>
-          <li>Lightweight and compact</li>
-        </ul>
-        <p>Elements & Housings Available From Stock</p>
+        
+        <div className="two-columns">
+          <div>
+            <h4>Performance Features</h4>
+            <ul>
+              <li>Ultra-low dew points (-40°F/-40°C)</li>
+              <li>Energy-efficient membrane technology</li>
+              <li>Continuous unattended operation</li>
+              <li>Explosion-proof options available</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4>Design Advantages</h4>
+            <ul>
+              <li>Minimal maintenance requirements</li>
+              <li>Silent operational profile</li>
+              <li>Compact, space-saving form factor</li>
+              <li>Rapid element replacement</li>
+            </ul>
+          </div>
+        </div>
       </>
     ),
     air: (
       <>
-        <h2>Air Filtration (Engine)</h2>
+        <h2>Engine Air Filtration</h2>
+        <div className="highlight-box">
+          <p>The First Line of Defense for Your Engine Investment</p>
+        </div>
+        
         <p>
-          The Air Filter element establishes a barrier for the separation of airborne contaminants,
-          allowing only clean air to enter the engine. Air filter elements fall into four broad
-          categories:
+          In modern diesel engines, air purity directly impacts performance, fuel efficiency, and service life. 
+          Our engineered filtration solutions provide superior protection against the particles and contaminants 
+          that cause premature wear and reduced performance.
         </p>
+        
+        <h4>Filter Technologies:</h4>
         <ul>
-          <li>Automotive. Both round and panel designs, with moulded ends.</li>
-          <li>Heavy-Duty Primary. Usually with metal ends, available in both PA (standard) and LL (long-life) models.</li>
-          <li>Heavy-Duty Secondary. Used to seal out dirt while the primary filter is being changed.</li>
-          <li>Radial Seal. With moulded ends and a reinforced closed end - characterised by ease of service.</li>
+          <li><strong>Automotive Series:</strong> Round and panel designs with precision-molded end caps</li>
+          <li><strong>Heavy-Duty Primary:</strong> Metal-capped elements in standard and extended life configurations</li>
+          <li><strong>Safety Elements:</strong> Secondary filters providing protection during maintenance</li>
+          <li><strong>Radial Seal Technology:</strong> Advanced designs with reinforced ends for simplified service</li>
         </ul>
+        
         <p>
-          Air is necessary for successful combustion in your engine. In fact, for efficient
-          combustion, a modern diesel engine requires several thousand times as much air as it
-          does fuel. Clean air - air almost 100% pure - is critical to engine survival and vital to its
-          performance. OG Services will provide you with a single source solution for all
-          your air filtration requirements... Replacement Elements... Housings... OE Spares...
-        </p>
-        <p>
-          ~ OG Services have one of the largest and diverse ranges of air filtration
-          available from stock in Kazakhstan ~
+          <strong>Kazakhstan's Premier Source:</strong> OG Services maintains the region's most 
+          comprehensive engine filtration inventory, ensuring immediate availability of critical components.
         </p>
       </>
     ),
     hydrocarbon: (
       <>
         <h2>Hydrocarbon Filtration</h2>
+        <div className="highlight-box">
+          <p>Precision Filtration for Oil, Gas, and Petrochemical Applications</p>
+        </div>
+        
         <p>
-          OG Services provides comprehensive hydrocarbon filtration solutions designed for the oil and gas industry. Our high-quality filters effectively remove contaminants from various hydrocarbon streams, ensuring product purity and equipment protection.
+          In hydrocarbon processing, contaminant control directly impacts product quality, equipment longevity, 
+          and operational safety. Our specialized solutions address the unique challenges of petroleum-based 
+          media through targeted filtration technologies.
         </p>
-        <p>
-          Our range includes coalescing filters, particulate filters, and specialized solutions for different hydrocarbon applications, all engineered to improve process efficiency while maintaining product quality.
-        </p>
+        
+        <h4>Industry Applications:</h4>
+        <ul>
+          <li><strong>Upstream:</strong> Wellhead protection, production separation, and injection system filtration</li>
+          <li><strong>Midstream:</strong> Pipeline transfer, compression systems, and terminal operations</li>
+          <li><strong>Downstream:</strong> Refinery processes, product polishing, and distribution systems</li>
+        </ul>
       </>
     )
   };
@@ -281,8 +337,8 @@ const Products = () => {
         <div className="products-hero-content">
           <h1>
             {activeCategory === "filters" ? "Filters" : 
-             activeCategory === "belts" ? "Belts" : 
-             "Our Products"}
+            activeCategory === "belts" ? "Belts" : 
+            "Our Products"}
           </h1>
           <p>Premium Quality Solutions for Industrial Excellence</p>
         </div>
@@ -346,10 +402,14 @@ const Products = () => {
                     {productTypeDescriptions[activeProductType] || (
                       <div>
                         <h2>{productCategories.find(cat => cat.id === activeProductType)?.name}</h2>
+                        <div className="highlight-box">
+                          <p>Engineered Solutions for Demanding Applications</p>
+                        </div>
                         <p>
-                          OG Services offers high-quality {productCategories.find(cat => cat.id === activeProductType)?.name.toLowerCase()} 
-                          solutions for various industrial applications. Our products meet the highest 
-                          quality standards and are sourced from leading manufacturers in the industry.
+                          Our {productCategories.find(cat => cat.id === activeProductType)?.name.toLowerCase()} 
+                          systems combine innovative design with premium materials to deliver exceptional 
+                          performance in challenging industrial environments. Each product undergoes 
+                          rigorous testing to ensure reliability and durability when it matters most.
                         </p>
                       </div>
                     )}
@@ -357,17 +417,22 @@ const Products = () => {
                 ) : (
                   <>
                     <h2>OG Services Industrial Filtration</h2>
+                    <div className="highlight-box">
+                      <p>Industry Leaders in Filtration Technology Since 2005</p>
+                    </div>
                     <p>
-                      OG Services is a globally recognized company serving the industrial filtration,
-                      separation and purification needs of companies globally. Established in 2005, OG Services
-                      supplies a wide range of products and services to industries such as: Power Generation,
-                      Marine and Offshore, Food and Beverage, Potable Water and Industrial Manufacturing
-                      sectors. Our products are used to efficiently remove particulate and solid contaminates
-                      from a range of gases and fluids.
+                      At OG Services, we specialize in advanced separation and purification technologies 
+                      that solve complex contamination challenges across multiple industries. Our expertise 
+                      spans energy production, marine applications, food processing, municipal water treatment, 
+                      and precision manufacturing processes.
                     </p>
                     <p>
-                      OG Services is headquartered in Astana, Kazakhstan and has over ninety
-                      warehouse facilities throughout the world.
+                      Through innovative engineering and premium-quality components, we deliver systems 
+                      that effectively capture particulates and remove contaminants from both gas and 
+                      liquid process streams, improving efficiency and protecting valuable equipment.
+                    </p>
+                    <p className="company-fact">
+                      <strong>Headquartered in Astana, Kazakhstan with 4 strategic warehouse facilities nationwide</strong>
                     </p>
                   </>
                 )}
