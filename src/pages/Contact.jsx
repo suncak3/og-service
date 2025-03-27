@@ -8,8 +8,8 @@ import fleetguard from "../assets/logos/fleetguard.png"
 import phone from "../assets/icons/Phone.png"
 import location from "../assets/icons/Location.png"
 import mail from "../assets/icons/Mail.png"
+import success from "../assets/icons/success.png"
 
-import linkedin from "../assets/logos/linkedin.png"
 
 const Contact = () => {
   // Animation on scroll
@@ -145,7 +145,7 @@ const Contact = () => {
               {formSubmitted ? (
                 <div className="form-success">
                   <div className="success-icon">
-                    <img src="/assets/icons/check-circle.svg" alt="Success" />
+                    <img src={success} alt="Success" />
                   </div>
                   <h3>Thank You!</h3>
                   <p>Your message has been successfully sent. We will contact you very soon!</p>
