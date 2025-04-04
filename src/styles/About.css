@@ -31,7 +31,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/assets/images/about-hero-bg.jpg');
+  background-image: url('../assets/images/about-hero-bg.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.2;
@@ -86,7 +86,7 @@
   left: 0;
   width: 100%;
   height: 60px;
-  background-image: url('/assets/images/wave-pattern.svg');
+  background-image: url('../assets/images/wave-pattern.svg');
   background-repeat: repeat-x;
   background-size: contain;
 }
@@ -608,7 +608,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/assets/images/dot-pattern.png');
+  background-image: url('../assets/images/dot-pattern.png');
   background-size: 20px;
   opacity: 0.05;
   z-index: 1;
@@ -719,7 +719,7 @@
 /* CTA Section */
 .about-cta-section {
   padding: 80px 0;
-  background-image: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('/assets/images/cta-bg.jpg');
+  background-image: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('../assets/images/cta-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;

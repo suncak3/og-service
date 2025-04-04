@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate  } from "react-router-dom";
 import './styles/App.css';
 import Header from "./components/Header.jsx";
 import Home from "./pages/Home.jsx";
@@ -18,6 +18,8 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/products/:category/:brandId" element={<BrandProducts />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
     </Router>

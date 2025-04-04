@@ -50,22 +50,22 @@ const Footer = () => {
             <div className="footer-column">
               <h3 className="footer-title">Filters</h3>
               <ul className="footer-links">
-                <li><Link to="/products/filters/pall">PALL</Link></li>
-                <li><Link to="/products/filters/camfil">Camfil</Link></li>
-                <li><Link to="/products/filters/higgins">HIGGINS AND HEWINS</Link></li>
-                <li><Link to="/products/filters/afpro">AF Pro</Link></li>
-                <li><Link to="/products/filters/hochiki">Hochiki</Link></li>
-                <li><Link to="/products/filters/purafil">Purafil</Link></li>
+                <li>PALL</li>
+                <li>Camfil</li>
+                <li>HIGGINS AND HEWINS</li>
+                <li>AF Pro</li>
+                <li>Hochiki</li>
+                <li>Purafil</li>
               </ul>
             </div>
 
             <div className="footer-column">
               <h3 className="footer-title">Belts</h3>
               <ul className="footer-links">
-                <li><Link to="/products/belts/gates">Gates</Link></li>
-                <li><Link to="/products/belts/continental">Continental (Contitech)</Link></li>
-                <li><Link to="/products/belts/optibelt">Optibelt</Link></li>
-                <li><Link to="/products/belts/dunham">Dunham Bush</Link></li>
+                <li>Gates</li>
+                <li>Continental (Contitech)</li>
+                <li>Optibelt </li>
+                <li>Dunham Bush</li>
               </ul>
             </div>
           </div>
