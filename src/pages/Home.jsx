@@ -145,7 +145,7 @@ const Home = () => {
                 <img src={experience_2} alt="Experience" />
               </div>
               <div className="stat-content">
-                <div className="stat-number">99</div>
+                <div className="stat-number">13</div>
                 <div className="stat-label">YEARS OF EXPERIENCE</div>
               </div>
             </div>
@@ -157,7 +157,7 @@ const Home = () => {
                 <img src={global_2} alt="Global" />
               </div>
               <div className="stat-content">
-                <div className="stat-number">99</div>
+                <div className="stat-number">3</div>
                 <div className="stat-label">COUNTRIES</div>
               </div>
             </div>
@@ -169,7 +169,7 @@ const Home = () => {
                 <img src={clients} alt="Clients" />
               </div>
               <div className="stat-content">
-                <div className="stat-number">9999</div>
+                <div className="stat-number">30+</div>
                 <div className="stat-label">HAPPY CLIENTS</div>
               </div>
             </div>

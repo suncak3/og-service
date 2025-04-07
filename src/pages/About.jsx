@@ -47,7 +47,7 @@ const About = () => {
       <section className="about-hero">
         <div className="about-hero-content">
           <h1>About OG Services</h1>
-          <p>Pioneering Filtration Excellence Since 2005</p>
+          <p>Pioneering Filtration Excellence Since 2012</p>
           <div className="hero-cta">
             <Link to="/contact" className="btn btn-accent">Talk to an Expert</Link>
           </div>
@@ -68,9 +68,9 @@ const About = () => {
               </p>
               <div className="text-divider"></div>
               <p>
-                Founded in 2005, OG Services has grown from a small local supplier to a global
+                Founded in 2012, OG Services has grown from a small local supplier to a global
                 leader in industrial filtration solutions. With headquarters in Astana, Kazakhstan,
-                we now serve customers in 99 countries across the globe, offering an extensive range
+                we now serve customers in several countries across the globe, offering an extensive range
                 of filtration products from the most respected brands in the industry.
               </p>
             </div>
@@ -94,7 +94,7 @@ const About = () => {
           
           <div className="timeline">
             <div className="timeline-item animate-on-scroll">
-              <div className="timeline-year">2005</div>
+              <div className="timeline-year">2012</div>
               <div className="timeline-content">
                 <h3>Foundation</h3>
                 <p>OG Services was established in Astana with a team of 5 dedicated professionals.</p>
@@ -102,15 +102,15 @@ const About = () => {
             </div>
             
             <div className="timeline-item animate-on-scroll">
-              <div className="timeline-year">2010</div>
+              <div className="timeline-year">2015</div>
               <div className="timeline-content">
                 <h3>Regional Expansion</h3>
-                <p>Expanded operations to 15 countries across Central Asia and Eastern Europe.</p>
+                <p>Regional expansion within the whole Kazakhstan.</p>
               </div>
             </div>
             
             <div className="timeline-item animate-on-scroll">
-              <div className="timeline-year">2015</div>
+              <div className="timeline-year">2020</div>
               <div className="timeline-content">
                 <h3>Global Partnerships</h3>
                 <p>Formed strategic alliances with leading manufacturers including PALL and Camfil.</p>
@@ -118,9 +118,9 @@ const About = () => {
             </div>
             
             <div className="timeline-item animate-on-scroll">
-              <div className="timeline-year">2020</div>
+              <div className="timeline-year">2022</div>
               <div className="timeline-content">
-                <h3>Digital Transformation</h3>
+                <h3>Rebranding and Digital Transformation</h3>
                 <p>Launched our digital platform, making product selection and ordering more efficient.</p>
               </div>
             </div>
@@ -128,8 +128,8 @@ const About = () => {
             <div className="timeline-item animate-on-scroll">
               <div className="timeline-year">Today</div>
               <div className="timeline-content">
-                <h3>Industry Leader</h3>
-                <p>Recognized as a global leader with operations in 99 countries and over 9,999 satisfied clients.</p>
+                <h3>Trusted partner</h3>
+                <p>For several high profile oil & gas operating companies and other industries in Kazakhstan, Russia and Uzbekistan.</p>
               </div>
             </div>
           </div>
@@ -194,51 +194,6 @@ const About = () => {
             <div className="value-card animate-on-scroll">
               <h3 data-number="04">Sustainability</h3>
               <p>We prioritize environmentally responsible products and practices across our operations, contributing to a healthier planet. By developing energy-efficient filtration solutions and implementing eco-friendly business processes, we help our clients meet their sustainability goals.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Team Section */}
-      <section className="team-section">
-        <div className="container">
-          <div className="section-header animate-on-scroll">
-            <span className="section-tag">OUR LEADERSHIP</span>
-            <h2>The Experts Behind Our Success</h2>
-          </div>
-          
-          <div className="team-grid">
-            <div className="team-member animate-on-scroll">
-              <div className="member-image">
-                <img src={worker} alt="Chief Executive Officer" />
-              </div>
-              <div className="member-info">
-                <h3>Alex Johnson</h3>
-                <p className="member-title">Chief Executive Officer</p>
-                <p className="member-bio">With over 20 years of experience in industrial filtration, Alex has led OG Services to become an industry leader through strategic vision and unwavering commitment to excellence.</p>
-              </div>
-            </div>
-            
-            <div className="team-member animate-on-scroll">
-              <div className="member-image">
-                <img src={worker} alt="Chief Technology Officer" />
-              </div>
-              <div className="member-info">
-                <h3>Maria Petrova</h3>
-                <p className="member-title">Chief Technology Officer</p>
-                <p className="member-bio">Maria's innovative approach to filtration technology has revolutionized our product offerings, keeping OG Services at the cutting edge of industry advancement.</p>
-              </div>
-            </div>
-            
-            <div className="team-member animate-on-scroll">
-              <div className="member-image">
-                <img src={worker} alt="Chief Operating Officer" />
-              </div>
-              <div className="member-info">
-                <h3>David Chen</h3>
-                <p className="member-title">Chief Operating Officer</p>
-                <p className="member-bio">David's expertise in global operations has been instrumental in expanding our presence to 99 countries while maintaining consistent quality and service excellence.</p>
-              </div>
             </div>
           </div>
         </div>
@@ -322,7 +277,7 @@ const About = () => {
           <div className="global-grid">
             <div className="global-text animate-on-scroll">
               <span className="section-tag">OUR REACH</span>
-              <h2>Global Presence, Local Support</h2>
+              <h2>International presence</h2>
               <p>
                 While we operate on a global scale, we maintain a commitment to providing personalized,
                 responsive service to each client. Our local representatives are always available to
@@ -351,7 +306,7 @@ const About = () => {
                 <img src={experience_2} alt="Experience" />
               </div>
               <div className="stat-content">
-                <div className="stat-number">99</div>
+                <div className="stat-number">13</div>
                 <div className="stat-label">YEARS OF EXPERIENCE</div>
               </div>
             </div>
@@ -363,7 +318,7 @@ const About = () => {
                 <img src={global_2} alt="Global" />
               </div>
               <div className="stat-content">
-                <div className="stat-number">99</div>
+                <div className="stat-number">3</div>
                 <div className="stat-label">COUNTRIES SERVED</div>
               </div>
             </div>
@@ -375,7 +330,7 @@ const About = () => {
                 <img src={clients} alt="Clients" />
               </div>
               <div className="stat-content">
-                <div className="stat-number">9999</div>
+                <div className="stat-number">30+</div>
                 <div className="stat-label">SATISFIED CLIENTS</div>
               </div>
             </div>
@@ -387,7 +342,7 @@ const About = () => {
                 <img src={products} alt="Products" />
               </div>
               <div className="stat-content">
-                <div className="stat-number">1000+</div>
+                <div className="stat-number">200+</div>
                 <div className="stat-label">PRODUCTS AVAILABLE</div>
               </div>
             </div>

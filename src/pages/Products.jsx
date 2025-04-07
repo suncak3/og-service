@@ -119,7 +119,6 @@ const Products = () => {
             <ul>
               <li>Offshore & Marine</li>
               <li>Chemical Processing</li>
-              <li>Semiconductor Manufacturing</li>
               <li>Food & Beverage Production</li>
             </ul>
           </div>

@@ -24,11 +24,11 @@ const Footer = () => {
               <div className="footer-contact">
                 <div className="contact-item">
                   <img src={phone} alt="Phone" />
-                  <span>+7 777 777 77 77</span>
+                  <span>+7 707 466 1423</span>
                 </div>
                 <div className="contact-item">
                   <img src={email} alt="Email" />
-                  <span>info@og.kz</span>
+                  <span> info@ogservices.kz</span>
                 </div>
                 <div className="contact-item">
                   <img src={location} alt="Address" />

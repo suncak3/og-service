@@ -51,7 +51,7 @@ const Header = () => {
                 <div className="header-contact">
                     <div>
                         <img src={phone} alt="phone icon"/> 
-                        +7 777 777 77 77
+                        +7 707 466 1423
                     </div>
                     <div>
                         <img src={clock} alt="clock icon"/>
@@ -75,7 +75,7 @@ const Header = () => {
                 <div className="header-info">
                     <div>
                         <p className="info-label">Email us</p>
-                        <p className="info-value">sales@ogservices.com</p>
+                        <p className="info-value"> info@ogservices.kz</p>
                     </div>
                     <div>
                         <p className="info-label">Address</p>
@@ -83,7 +83,7 @@ const Header = () => {
                     </div>
                     <div>
                         <p className="info-label">Call us</p>
-                        <p className="info-value">+7 777 777 77 77</p>
+                        <p className="info-value">+7 707 466 1423</p>
                     </div>
                     <button className="header-button" onClick={handleGetQuote}>GET QUOTE</button>
                 </div>
@@ -127,11 +127,11 @@ const Header = () => {
                 <div className="mobile-contact-info">
                     <div className="mobile-contact-item">
                         <img src="/assets/icons/phone.png" alt="phone icon"/>
-                        <p>+7 777 777 77 77</p>
+                        <p>+7 707 466 1423</p>
                     </div>
                     <div className="mobile-contact-item">
                         <img src="/assets/icons/mail.png" alt="mail icon"/>
-                        <p>sales@ogservices.com</p>
+                        <p>info@ogservices.kz</p>
                     </div>
                     <div className="mobile-contact-item">
                         <img src="/assets/icons/location.png" alt="location icon"/>

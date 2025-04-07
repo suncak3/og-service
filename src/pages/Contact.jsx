@@ -115,7 +115,7 @@ const Contact = () => {
                     </div>
                     <div className="contact-text">
                       <h3>Call Us</h3>
-                      <p>+7 777 777 77 77</p>
+                      <p>+7 707 466 1423</p>
                       <p>Mon - Fri, 9:00 - 17:00</p>
                     </div>
                   </div>
@@ -126,8 +126,7 @@ const Contact = () => {
                     </div>
                     <div className="contact-text">
                       <h3>Email Us</h3>
-                      <p>info@og.kz</p>
-                      <p>sales@ogservices.com</p>
+                      <p> info@ogservices.kz</p>
                     </div>
                   </div>
                 </div>
