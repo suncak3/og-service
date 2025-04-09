@@ -18,7 +18,7 @@ const Footer = () => {
                 <img src={logo} alt="OG Services Logo" />
               </div>
               <p className="footer-about">
-                Global leader in industrial filtration solutions, providing high-quality 
+                Regional leader in industrial filtration solutions, providing high-quality 
                 filters and belts to enhance operational efficiency and reliability.
               </p>
               <div className="footer-contact">

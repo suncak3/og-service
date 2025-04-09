@@ -56,11 +56,7 @@ const Header = () => {
                     <div>
                         <img src={clock} alt="clock icon"/>
                         Mon - Fri 09:00 - 17:00
-                    </div>
-                    <div>
-                        <img src={location} alt="location icon"/> 
-                        Astana, st. Konaeva 33, office 303
-                    </div>
+                    </div>  
                 </div>
                 {/* Mail icon removed */}
             </div>
@@ -76,10 +72,6 @@ const Header = () => {
                     <div>
                         <p className="info-label">Email us</p>
                         <p className="info-value"> info@ogservices.kz</p>
-                    </div>
-                    <div>
-                        <p className="info-label">Address</p>
-                        <p className="info-value">Astana, st. Konaeva 33, office 303</p>
                     </div>
                     <div>
                         <p className="info-label">Call us</p>
@@ -132,10 +124,6 @@ const Header = () => {
                     <div className="mobile-contact-item">
                         <img src="/assets/icons/mail.png" alt="mail icon"/>
                         <p>info@ogservices.kz</p>
-                    </div>
-                    <div className="mobile-contact-item">
-                        <img src="/assets/icons/location.png" alt="location icon"/>
-                        <p>Astana, st. Konaeva 33, office 303</p>
                     </div>
                     <button className="mobile-quote-btn" onClick={handleGetQuote}>GET QUOTE</button>
                 </div>

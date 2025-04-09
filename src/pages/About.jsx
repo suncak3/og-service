@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/About.css";
-import headquarter from "../assets/images/headquarter.jpg"
+import driveBelts from "../assets/images/Drive-Belts-3.jpg"
 import mission from "../assets/icons/mission.png"
 import vision from "../assets/icons/vision.png"
 import oil from "../assets/icons/oil-and-gas.png"
@@ -16,6 +16,8 @@ import afpro from "../assets/logos/afpro.png"
 import camfil from "../assets/logos/camfil.png"
 import jasun from "../assets/logos/jasun.png"
 import fleetguard from "../assets/logos/fleetguard.png"
+
+
 
 
 const About = () => {
@@ -62,21 +64,20 @@ const About = () => {
               <span className="section-tag">WHO WE ARE</span>
               <h2>Leading the Filtration Industry with Innovation & Expertise</h2>
               <p className="lead-text">
-                From our humble beginnings in Kazakhstan to becoming a global leader in industrial filtration solutions, 
+                From our humble beginnings in Kazakhstan to becoming a regional leader in industrial filtration solutions, 
                 OG Services has consistently pushed the boundaries of what's possible in filtration technology.
               </p>
               <div className="text-divider"></div>
               <p>
-                Founded in 2012, OG Services has grown from a small local supplier to a global
+                Founded in 2012, OG Services has grown from a small local supplier to a regional
                 leader in industrial filtration solutions. With headquarters in Astana, Kazakhstan,
-                we now serve customers in several countries across the globe, offering an extensive range
+                we now serve customers in several countries across the region, offering an extensive range
                 of filtration products from the most respected brands in the industry.
               </p>
             </div>
             <div className="overview-image animate-on-scroll">
               <div className="image-wrapper">
-                <img src={headquarter} alt="OG Services Headquarters" />
-                <div className="image-caption">Our Headquarters in Astana, Kazakhstan</div>
+                <img src={driveBelts} alt="OG Services Headquarters" />
               </div>
             </div>
           </div>
