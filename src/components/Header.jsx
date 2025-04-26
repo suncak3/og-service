@@ -108,6 +108,11 @@ const Header = () => {
                         e.preventDefault();
                         closeMenuAndNavigate('/products');
                     }}>PRODUCTS</a>
+
+                    <a href="/services" onClick={(e) => {
+                        e.preventDefault();
+                        closeMenuAndNavigate('/services');
+                    }}>SERVICES</a>
                     
                     <a href="/contact" onClick={(e) => {
                         e.preventDefault();

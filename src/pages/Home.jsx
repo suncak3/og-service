@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import belts from "../assets/images/drive-belts.png"
@@ -19,6 +19,23 @@ import jasun from "../assets/logos/jasun.png"
 import fleetguard from "../assets/logos/fleetguard.png"
 
 const Home = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+  
+  // Handle slide change
+  const changeSlide = (index) => {
+    setActiveSlide(index);
+  };
+  
+  // Navigate to previous slide
+  const prevSlide = () => {
+    setActiveSlide(activeSlide === 0 ? 1 : 0);
+  };
+  
+  // Navigate to next slide
+  const nextSlide = () => {
+    setActiveSlide(activeSlide === 0 ? 1 : 0);
+  };
+  
   // Add animation on scroll effect
   useEffect(() => {
     const animateOnScroll = () => {
@@ -42,16 +59,57 @@ const Home = () => {
   
   return (
     <main className="home-page">
-      {/* Hero Section */}
+      {/* Hero Section with Slider */}
       <section className="hero-section">
         <img loading="lazy" src={back} alt="Background img" className="hexagon-pattern"></img>
-        <div className="hero-content animate-on-scroll">
-          <h1>Filters refine your choices, helping you find exactly what you need with ease and precision.</h1>
-          <div className="hero-divider"></div>
-          <Link to="/products" className="btn btn-hero">Explore Our Products</Link>
+        
+        {/* Slide 1 - Products */}
+        <div className={`hero-slide ${activeSlide === 0 ? 'active' : ''}`}>
+          <div className="hero-content animate-on-scroll">
+            <h1>OG Services LLP supplies industrial materials and partners with major companies in Kazakhstan, Russia, and Uzbekistan.</h1>
+            <div className="hero-divider"></div>
+            <Link to="/products" className="btn btn-hero">Explore Our Products</Link>
+          </div>
+          <div className="hero-image animate-on-scroll">
+            <img loading="lazy" src={belts} alt="Industrial belts" />
+          </div>
         </div>
-        <div className="hero-image animate-on-scroll">
-          <img loading="lazy" src={belts} alt="Industrial belts" />
+        
+        {/* Slide 2 - Services */}
+        <div className={`hero-slide ${activeSlide === 1 ? 'active' : ''}`}>
+          <div className="hero-content animate-on-scroll">
+            <h1>Comprehensive IT and transportation solutions for your industrial needs.</h1>
+            <div className="hero-divider"></div>
+            <Link to="/services" className="btn btn-hero">Discover Our Services</Link>
+          </div>
+          <div className="hero-image-services animate-on-scroll">
+            <img loading="lazy" src={filters} alt="Services" />
+          </div>
+        </div>
+        
+        {/* Slider Navigation - Dots for desktop, Arrows for mobile */}
+        <div className="slider-navigation">
+          {/* Dots (hidden on mobile) */}
+          <div className="slider-dots">
+            <span 
+              className={`slider-dot ${activeSlide === 0 ? 'active' : ''}`} 
+              onClick={() => changeSlide(0)}
+            ></span>
+            <span 
+              className={`slider-dot ${activeSlide === 1 ? 'active' : ''}`} 
+              onClick={() => changeSlide(1)}
+            ></span>
+          </div>
+          
+          {/* Arrows (shown on mobile) */}
+          <div className="slider-arrows">
+            <button className="slider-arrow prev-arrow" onClick={prevSlide}>
+              &lt;
+            </button>
+            <button className="slider-arrow next-arrow" onClick={nextSlide}>
+              &gt;
+            </button>
+          </div>
         </div>
       </section>
 

@@ -16,6 +16,9 @@ const Navbar = () => {
         }>
           PRODUCTS
         </NavLink>
+        <NavLink to="/services" className={({ isActive }) => isActive ? "active" : ""}>
+          SERVICES
+        </NavLink>
         <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>
           CONTACT US
         </NavLink>
