@@ -8,6 +8,7 @@ import BrandProducts from "./pages/BrandProducts.jsx";
 import Contact from "./pages/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Services from "./pages/Services.jsx";
+import ServiceDetail from "./pages/ServiceDetail.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/products/:category/:brandId" element={<BrandProducts />} />
         <Route path="/services" element={<Services />} />
+        <Route path="services/:serviceId" element={<ServiceDetail />} />
         <Route path="/contact" element={<Contact />} />
 
         <Route path="*" element={<Navigate to="/" replace />} />
