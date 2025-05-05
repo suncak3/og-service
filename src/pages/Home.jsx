@@ -87,21 +87,8 @@ const Home = () => {
           </div>
         </div>
         
-        {/* Slider Navigation - Dots for desktop, Arrows for mobile */}
+        {/* Slider Navigation - Arrows for all screens */}
         <div className="slider-navigation">
-          {/* Dots (hidden on mobile) */}
-          <div className="slider-dots">
-            <span 
-              className={`slider-dot ${activeSlide === 0 ? 'active' : ''}`} 
-              onClick={() => changeSlide(0)}
-            ></span>
-            <span 
-              className={`slider-dot ${activeSlide === 1 ? 'active' : ''}`} 
-              onClick={() => changeSlide(1)}
-            ></span>
-          </div>
-          
-          {/* Arrows (shown on mobile) */}
           <div className="slider-arrows">
             <button className="slider-arrow prev-arrow" onClick={prevSlide}>
               &lt;
@@ -194,7 +181,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section - UPDATED */}
+      {/* Stats Section */}
       <section className="stats-section">
         <div className="container">
           <div className="stats-wrapper">
