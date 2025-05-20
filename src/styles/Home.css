@@ -44,36 +44,40 @@
 
 .slider-navigation {
   position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
   z-index: 10;
+  pointer-events: none;
 }
 
 /* Arrows for all screen sizes */
 .slider-arrows {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 300px;
+  padding: 0 30px;
+  pointer-events: none;
 }
 
 .slider-arrow {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  pointer-events: auto;
 }
 
 .slider-arrow:hover {
@@ -606,6 +610,35 @@
 
 /* For tablet screens */
 @media (max-width: 920px) {
+
+  .slider-navigation {
+    position: absolute;
+    bottom: 20px;
+    top: auto;
+    left: 0;
+    right: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-arrows {
+    position: static;
+    transform: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    padding: 0;
+  }
+  
+  .slider-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
   .stats-section {
     padding: 60px 0;
   }
