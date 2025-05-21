@@ -17,6 +17,21 @@ import afpro from "../assets/logos/afpro.png"
 import camfil from "../assets/logos/camfil.png"
 import jasun from "../assets/logos/jasun.png"
 import fleetguard from "../assets/logos/fleetguard.png"
+import parts from "../assets/images/Parts.jpg"
+import fittings from "../assets/images/fittings.jpg"
+import tools from "../assets/images/tools.png"
+import electrical from "../assets/images/electrical.jpg"
+import equipment from "../assets/images/equipment.webp"
+import valves from "../assets/images/valves.png"
+
+// Import placeholder images for new categories
+// Note: Replace these with actual product images when available
+// import spareParts from "../assets/images/drive-belts-2.png" // placeholder
+// import piping from "../assets/images/drive-belts-2.png" // placeholder
+// import tools from "../assets/images/drive-belts-2.png" // placeholder
+// import electrical from "../assets/images/drive-belts-2.png" // placeholder
+// import processing from "../assets/images/drive-belts-2.png" // placeholder
+// import valves from "../assets/images/drive-belts-2.png" // placeholder
 
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -103,21 +118,21 @@ const Home = () => {
       {/* Products Overview Section */}
       <section className="product-overview-section">
         <div className="container">
-          <div className="overview-flex">
+          <div className="overview-content">
             <div className="overview-text animate-on-scroll">
-              <h2>High-Quality Products for Industrial Excellence</h2>
-              <p>We proudly supply high-quality filters and belts across the globe, ensuring reliability and performance wherever you are!</p>
+              <h2>Comprehensive Industrial Solutions</h2>
+              <p>We proudly supply a wide range of high-quality industrial products across Kazakhstan, Russia, and Uzbekistan, ensuring reliability and performance for every industrial application.</p>
               
-              <p>Our premium filters and belts power industries worldwide, delivering unmatched reliability, peak performance, and unstoppable efficiency—because excellence knows no borders!</p>
+              <p>From filtration systems and drive belts to specialized equipment and components, our extensive product range powers industries across diverse sectors, delivering unmatched reliability and operational efficiency.</p>
               
               <h3>Our Vision</h3>
-              <p>To set the global standard in filtration and power transmission solutions, driving innovation, sustainability, and superior quality to keep the world moving forward.</p>
+              <p>To become the leading industrial supplier in Central Asia by providing innovative solutions, maintaining superior quality standards, and helping our clients achieve operational excellence.</p>
               
               <Link to="/products" className="btn btn-primary">View All Products</Link>
             </div>
 
-            <div className="overview-categories">
-              <Link to="/products?category=filters" className="category-card">
+            <div className="product-categories-grid">
+              <Link to="/products?category=filters" className="category-card animate-on-scroll">
                 <div className="category-image">
                   <img src={filters} alt="Filters" />
                 </div>
@@ -126,12 +141,66 @@ const Home = () => {
                 </div>
               </Link>
   
-              <Link to="/products?category=belts" className="category-card">
+              <Link to="/products?category=belts" className="category-card animate-on-scroll">
                 <div className="category-image">
                   <img src={belts_2} alt="Belts" />
                 </div>
                 <div className="category-overlay">
                   <h3>BELTS</h3>
+                </div>
+              </Link>
+
+              <Link to="/products?category=spare-parts" className="category-card animate-on-scroll">
+                <div className="category-image">
+                  <img src={parts} alt="Spare Parts and Components" />
+                </div>
+                <div className="category-overlay">
+                  <h3>SPARE PARTS</h3>
+                </div>
+              </Link>
+
+              <Link to="/products?category=piping" className="category-card animate-on-scroll">
+                <div className="category-image">
+                  <img src={fittings} alt="Piping, Flanges, and Fittings" />
+                </div>
+                <div className="category-overlay">
+                  <h3>PIPING & FITTINGS</h3>
+                </div>
+              </Link>
+
+              <Link to="/products?category=tools" className="category-card animate-on-scroll">
+                <div className="category-image">
+                  <img src={tools} alt="Hand Tools and Specialized Tools" />
+                </div>
+                <div className="category-overlay">
+                  <h3>TOOLS</h3>
+                </div>
+              </Link>
+
+              <Link to="/products?category=electrical" className="category-card animate-on-scroll">
+                <div className="category-image">
+                  <img src={electrical} alt="Electrical Equipment" />
+                </div>
+                <div className="category-overlay">
+                  <h3>ELECTRICAL</h3>
+                </div>
+              </Link>
+
+              <Link to="/products?category=processing" className="category-card animate-on-scroll">
+                <div className="category-image">
+                  <img src={equipment} alt="Standalone Processing Equipment" />
+                </div>
+                <div className="category-overlay">
+                  <h3>PROCESSING EQUIPMENT</h3>
+                </div>
+              </Link>
+
+              <Link to="/products?category=valves" className="category-card animate-on-scroll">
+                <div className="category-image">
+                  <img src={valves} alt="Valves" />
+                </div>
+                <div className="category-overlay">
+                  <h3>VALVES</h3>
                 </div>
               </Link>
             </div>
@@ -249,8 +318,8 @@ const Home = () => {
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container">
-          <h2 className="animate-on-scroll">Ready to Enhance Your Filtration Solutions?</h2>
-          <p className="animate-on-scroll">Contact our team today for expert advice and product information.</p>
+          <h2 className="animate-on-scroll">Ready to Enhance Your Industrial Operations?</h2>
+          <p className="animate-on-scroll">Contact our team today for expert advice and comprehensive product information.</p>
           <Link to="/contact" className="btn btn-accent animate-on-scroll">Get in Touch</Link>
         </div>
       </section>
