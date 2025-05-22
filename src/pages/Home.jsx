@@ -186,7 +186,7 @@ const Home = () => {
                 </div>
               </Link>
 
-              <Link to="/products?category=processing" className="category-card animate-on-scroll">
+              <Link to="/products?category=equipment" className="category-card animate-on-scroll">
                 <div className="category-image">
                   <img src={equipment} alt="Standalone Processing Equipment" />
                 </div>
