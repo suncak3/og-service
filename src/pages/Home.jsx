@@ -24,34 +24,23 @@ import electrical from "../assets/images/electrical.jpg"
 import equipment from "../assets/images/equipment.webp"
 import valves from "../assets/images/valves.png"
 
-// Import placeholder images for new categories
-// Note: Replace these with actual product images when available
-// import spareParts from "../assets/images/drive-belts-2.png" // placeholder
-// import piping from "../assets/images/drive-belts-2.png" // placeholder
-// import tools from "../assets/images/drive-belts-2.png" // placeholder
-// import electrical from "../assets/images/drive-belts-2.png" // placeholder
-// import processing from "../assets/images/drive-belts-2.png" // placeholder
-// import valves from "../assets/images/drive-belts-2.png" // placeholder
 
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   
-  // Handle slide change
+  
   const changeSlide = (index) => {
     setActiveSlide(index);
   };
   
-  // Navigate to previous slide
   const prevSlide = () => {
     setActiveSlide(activeSlide === 0 ? 1 : 0);
   };
   
-  // Navigate to next slide
   const nextSlide = () => {
     setActiveSlide(activeSlide === 0 ? 1 : 0);
   };
   
-  // Add animation on scroll effect
   useEffect(() => {
     const animateOnScroll = () => {
       const elements = document.querySelectorAll('.animate-on-scroll');
@@ -65,7 +54,7 @@ const Home = () => {
     };
 
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Run once on initial load
+    animateOnScroll();
     
     return () => {
       window.removeEventListener('scroll', animateOnScroll);

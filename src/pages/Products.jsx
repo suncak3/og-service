@@ -18,46 +18,46 @@ import continental from "../assets/logos/continental.png";
 import optibelt from "../assets/logos/optibelt.png";
 import dunham from "../assets/logos/dunham.png";
 
-import eaton from "../assets/logos/eaton.png"; // Placeholder
-import manuli from "../assets/logos/manuli.png"; // Placeholder
-import swagelok from "../assets/logos/swagelok.jpg"; // Placeholder
-import tenaris from "../assets/logos/tenaris.png"; // Placeholder
-import vallourec from "../assets/logos/vallourec.jpg"; // Placeholder
-import georgfischer from "../assets/logos/georg.png"; // Placeholder
-import victaulic from "../assets/logos/victaulic.png"; // Placeholder
-import viega from "../assets/logos/viega.png"; // Placeholder
-import tmk from "../assets/logos/tmk.png"; // Placeholder
-import electrosteel from "../assets/logos/ELECTCAST.png"; // Placeholder
-import hebei from "../assets/logos/hh.jpg"; // Placeholder
-import elite from "../assets/logos/elite.png"; // Placeholder
-import cangzhou from "../assets/logos/continental.png"; // Placeholder
-import sandvik from "../assets/logos/sandvik.png"; // Placeholder
-import kennametal from "../assets/logos/Kennametal.png"; // Placeholder
-import enerpac from "../assets/logos/enerpac.png"; // Placeholder
-import snapon from "../assets/logos/Snap-on.png"; // Placeholder
-import knipex from "../assets/logos/Knipex.png"; // Placeholder
-import atlascopco from "../assets/logos/atlas.png"; // Placeholder
-import bahco from "../assets/logos/bahco.png"; // Placeholder
-import herrenknecht from "../assets/logos/herrenknecht.png"; // Placeholder
-import wera from "../assets/logos/wera.png"; // Placeholder
-import ridgid from "../assets/logos/ridgid.png"; // Placeholder
-import norbar from "../assets/logos/norbar.png"; // Placeholder
-import schneider from "../assets/logos/schneider.png"; // Placeholder
-import abb from "../assets/logos/abb.png"; // Placeholder
-import siemens from "../assets/logos/siemens.png"; // Placeholder
-import legrand from "../assets/logos/legrand.png"; // Placeholder
-import honeywell from "../assets/logos/Honeywell.png"; // Placeholder
-import weg from "../assets/logos/weg.png"; // Placeholder
-import ingersollrand from "../assets/logos/Ingersoll.png"; // Placeholder
-import sullair from "../assets/logos/sullair.svg"; // Placeholder
-import kaeser from "../assets/logos/kaeser.png"; // Placeholder
-import neuman from "../assets/logos/nea.png"; // Placeholder
-import bauer from "../assets/logos/bauer.png"; // Placeholder
-import emerson from "../assets/logos/emerson.png"; // Placeholder
-import flowserve from "../assets/logos/flowserve.png"; // Placeholder
-import parkerhannifin from "../assets/logos/parker.png"; // Placeholder
-import imi from "../assets/logos/imi.png"; // Placeholder
-import samson from "../assets/logos/samson.png"; // Placeholder
+import eaton from "../assets/logos/eaton.png"; 
+import manuli from "../assets/logos/manuli.png"; 
+import swagelok from "../assets/logos/swagelok.jpg"; 
+import tenaris from "../assets/logos/tenaris.png"; 
+import vallourec from "../assets/logos/vallourec.jpg"; 
+import georgfischer from "../assets/logos/georg.png"; 
+import victaulic from "../assets/logos/victaulic.png"; 
+import viega from "../assets/logos/viega.png"; 
+import tmk from "../assets/logos/tmk.png"; 
+import electrosteel from "../assets/logos/ELECTCAST.png"; 
+import hebei from "../assets/logos/hh.jpg"; 
+import elite from "../assets/logos/elite.png"; 
+import cangzhou from "../assets/logos/continental.png"; 
+import sandvik from "../assets/logos/sandvik.png"; 
+import kennametal from "../assets/logos/Kennametal.png"; 
+import enerpac from "../assets/logos/enerpac.png"; 
+import snapon from "../assets/logos/Snap-on.png"; 
+import knipex from "../assets/logos/Knipex.png"; 
+import atlascopco from "../assets/logos/atlas.png"; 
+import bahco from "../assets/logos/bahco.png"; 
+import herrenknecht from "../assets/logos/herrenknecht.png"; 
+import wera from "../assets/logos/wera.png"; 
+import ridgid from "../assets/logos/ridgid.png"; 
+import norbar from "../assets/logos/norbar.png"; 
+import schneider from "../assets/logos/schneider.png"; 
+import abb from "../assets/logos/abb.png"; 
+import siemens from "../assets/logos/siemens.png"; 
+import legrand from "../assets/logos/legrand.png"; 
+import honeywell from "../assets/logos/Honeywell.png"; 
+import weg from "../assets/logos/weg.png"; 
+import ingersollrand from "../assets/logos/Ingersoll.png"; 
+import sullair from "../assets/logos/sullair.svg"; 
+import kaeser from "../assets/logos/kaeser.png"; 
+import neuman from "../assets/logos/nea.png"; 
+import bauer from "../assets/logos/bauer.png"; 
+import emerson from "../assets/logos/emerson.png"; 
+import flowserve from "../assets/logos/flowserve.png"; 
+import parkerhannifin from "../assets/logos/parker.png"; 
+import imi from "../assets/logos/imi.png"; 
+import samson from "../assets/logos/samson.png"; 
 
 import filtersImage from "../assets/images/filters.png";
 import beltsImage from "../assets/images/drive-belts.png";
@@ -73,7 +73,6 @@ const Products = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [activeProductType, setActiveProductType] = useState(null);
   
-  // Set initial category based on URL parameters
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const categoryParam = params.get('category');
