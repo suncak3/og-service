@@ -53,11 +53,11 @@ import sullair from "../assets/logos/sullair.svg"; // Placeholder
 import kaeser from "../assets/logos/kaeser.png"; // Placeholder
 import neuman from "../assets/logos/nea.png"; // Placeholder
 import bauer from "../assets/logos/bauer.png"; // Placeholder
-import emerson from "../assets/logos/HIGGINS_AND_HEWINS.png"; // Placeholder
-import flowserve from "../assets/logos/hochiki.png"; // Placeholder
-import parkerhannifin from "../assets/logos/purafil.png"; // Placeholder
-import imi from "../assets/logos/indufil.png"; // Placeholder
-import samson from "../assets/logos/dingbro.png"; // Placeholder
+import emerson from "../assets/logos/emerson.png"; // Placeholder
+import flowserve from "../assets/logos/flowserve.png"; // Placeholder
+import parkerhannifin from "../assets/logos/parker.png"; // Placeholder
+import imi from "../assets/logos/imi.png"; // Placeholder
+import samson from "../assets/logos/samson.png"; // Placeholder
 
 import filtersImage from "../assets/images/filters.png";
 import beltsImage from "../assets/images/drive-belts.png";
