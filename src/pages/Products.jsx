@@ -59,8 +59,6 @@ import parkerhannifin from "../assets/logos/parker.png";
 import imi from "../assets/logos/imi.png"; 
 import samson from "../assets/logos/samson.png"; 
 
-import filtersImage from "../assets/images/filters.png";
-import beltsImage from "../assets/images/drive-belts.png";
 import parts from "../assets/images/Parts-removebg-preview.png";
 import fittings from "../assets/images/fittings-removebg-preview.png";
 import tools from "../assets/images/tools-bg.png";
@@ -78,7 +76,7 @@ const Products = () => {
     const categoryParam = params.get('category');
     const productType = params.get('type');
     
-    if (categoryParam && ["filters", "belts", "spare-parts", "piping", "tools", "electrical", "equipment", "valves"].includes(categoryParam)) {
+    if (categoryParam && ["spare-parts", "piping", "tools", "electrical", "equipment", "valves"].includes(categoryParam)) {
       setActiveCategory(categoryParam);
     }
     
@@ -111,13 +109,20 @@ const Products = () => {
   // Product categories and their brands
   const categories = [
     {
-      id: "filters",
-      name: "Filters",
-      image: filtersImage,
-      description: "Advanced filtration solutions for industrial and commercial applications. Our comprehensive range includes process filtration, HVAC, compressed air, hydrocarbon, hydraulic, and engine air filtration systems.",
+      id: "spare-parts",
+      name: "Spare Parts & Components",
+      image: parts,
+      description: "Essential spare parts and components including bearings, hoses, sleeves, fittings, fasteners, general consumables, advanced filtration solutions, and premium quality power transmission belts for industrial equipment maintenance and repair.",
       brands: [
-        { id: "pall", name: "PALL", logo: pall },
+        // Original spare parts brands
+        { id: "parker", name: "Parker", logo: parker },
+        { id: "eaton", name: "Eaton", logo: eaton },
+        { id: "manuli", name: "Manuli Hydraulics", logo: manuli },
+        { id: "swagelok", name: "Swagelok", logo: swagelok },
         { id: "fleetguard", name: "Fleetguard", logo: fleetguard },
+        { id: "gates", name: "Gates", logo: gates },
+        // Filter brands moved from filters category
+        { id: "pall", name: "PALL", logo: pall },
         { id: "camfil", name: "Camfil", logo: camfil },
         { id: "higgins", name: "HIGGINS AND HEWINS", logo: HIGGINS_AND_HEWINS },
         { id: "afpro", name: "AF Pro", logo: afpro },
@@ -125,34 +130,11 @@ const Products = () => {
         { id: "purafil", name: "Purafil", logo: purafil },
         { id: "indufil", name: "Indufil", logo: indufil },
         { id: "dinbro", name: "Dinbro", logo: dinbro },
-        { id: "parker", name: "Parker", logo: parker },
-        { id: "jasun", name: "Jasun", logo: jasun }
-      ]
-    },
-    {
-      id: "belts",
-      name: "Belts",
-      image: beltsImage,
-      description: "Premium quality power transmission belts for industrial applications. Our belt solutions provide optimal performance, durability, and efficiency for diverse mechanical drive systems.",
-      brands: [
-        { id: "gates", name: "Gates", logo: gates },
+        { id: "jasun", name: "Jasun", logo: jasun },
+        // Belt brands moved from belts category
         { id: "continental", name: "Continental (Contitech)", logo: continental },
         { id: "optibelt", name: "Optibelt", logo: optibelt },
         { id: "dunham", name: "Dunham Bush", logo: dunham }
-      ]
-    },
-    {
-      id: "spare-parts",
-      name: "Spare Parts & Components",
-      image: parts,
-      description: "Essential spare parts and components including bearings, hoses, sleeves, fittings, fasteners, and general consumables for industrial equipment maintenance and repair.",
-      brands: [
-        { id: "parker", name: "Parker", logo: parker },
-        { id: "eaton", name: "Eaton", logo: eaton },
-        { id: "manuli", name: "Manuli Hydraulics", logo: manuli },
-        { id: "swagelok", name: "Swagelok", logo: swagelok },
-        { id: "fleetguard", name: "Fleetguard", logo: fleetguard },
-        { id: "gates", name: "Gates", logo: gates }
       ]
     },
     {
@@ -239,38 +221,40 @@ const Products = () => {
   const activeData = categories.find(cat => cat.id === activeCategory) || categories[0];
   
   // Filter product types based on active category
-  const filteredProductTypes = activeCategory === 'filters' ? [
-    { id: "process", name: "Process Filtration" },
-    { id: "hvac", name: "HVAC Filtration" },
-    { id: "compressed", name: "Compressed Air Filtration" },
-    { id: "hydrocarbon", name: "Hydrocarbon Filtration" },
-    { id: "hydraulic", name: "Hydraulic Filtration" },
-    { id: "dryers", name: "Filter Dryers" },
-    { id: "air", name: "Air Filtration" }
+  const filteredProductTypes = activeCategory === 'spare-parts' ? [
+    { id: "filters", name: "Filtration Solutions" },
+    { id: "belts", name: "Power Transmission Belts" },
+    { id: "bearings", name: "Bearings & Mechanical Components" },
+    { id: "hoses", name: "Hoses & Fluid Transfer" },
+    { id: "fasteners", name: "Fasteners & Hardware" },
+    { id: "consumables", name: "General Consumables" }
   ] : [];
   
   // Product type descriptions
   const productTypeDescriptions = {
-    process: (
+    filters: (
       <>
-        <h2>Process Filtration</h2>
+        <h2>Filtration Solutions</h2>
         <div className="highlight-box">
-          <p>Industry-Leading Technology for Liquid & Gas Applications</p>
+          <p>Advanced Filtration Systems for Industrial and Commercial Applications</p>
         </div>
         
         <p>
-          OG Services delivers process filtration solutions that maintain efficiency even in extreme conditions.
+          OG Services delivers comprehensive filtration solutions that maintain efficiency even in extreme conditions.
           Our systems are designed for pharmaceutical purity to industrial ruggedness, ensuring consistent performance
           when you need it most.
         </p>
         
         <div className="two-columns">
           <div>
-            <h4>Industries We Serve:</h4>
+            <h4>Filtration Categories:</h4>
             <ul>
-              <li>Offshore & Marine</li>
-              <li>Chemical Processing</li>
-              <li>Food & Beverage Production</li>
+              <li>Process Filtration Systems</li>
+              <li>HVAC Air Filtration</li>
+              <li>Compressed Air Filtration</li>
+              <li>Hydrocarbon Filtration</li>
+              <li>Hydraulic Filtration</li>
+              <li>Engine Air Filtration</li>
             </ul>
           </div>
           <div>
@@ -285,179 +269,121 @@ const Products = () => {
         </div>
       </>
     ),
-    hvac: (
+    belts: (
       <>
-        <h2>HVAC Filtration</h2>
+        <h2>Power Transmission Belts</h2>
         <div className="highlight-box">
-          <p>Creating Healthier Indoor Environments Through Advanced Air Purification</p>
+          <p>Premium Quality Belts for Industrial Power Transmission</p>
         </div>
         
         <p>
-          Our HVAC filtration solutions combine innovative design with premium materials, 
-          delivering exceptional air quality in facilities ranging from office buildings to critical care environments.
+          Our belt solutions provide optimal performance, durability, and efficiency for diverse mechanical drive systems.
+          From heavy-duty industrial applications to precision machinery, we offer the right belt technology for your needs.
         </p>
         
-        <h4>Performance Categories:</h4>
+        <div className="two-columns">
+          <div>
+            <h4>Belt Types:</h4>
+            <ul>
+              <li>V-Belts & Wedge Belts</li>
+              <li>Synchronous/Timing Belts</li>
+              <li>Flat Belts & Conveyor Belts</li>
+              <li>Variable Speed Belts</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Applications:</h4>
+            <ul>
+              <li>Industrial Machinery</li>
+              <li>HVAC Systems</li>
+              <li>Automotive Applications</li>
+              <li>Agricultural Equipment</li>
+            </ul>
+          </div>
+        </div>
+      </>
+    ),
+    bearings: (
+      <>
+        <h2>Bearings & Mechanical Components</h2>
+        <div className="highlight-box">
+          <p>Precision Bearings for Reliable Operation</p>
+        </div>
+        
+        <p>
+          High-quality bearings and mechanical components essential for smooth operation and extended equipment life.
+          Our comprehensive range covers various applications from light-duty to heavy industrial use.
+        </p>
+        
+        <h4>Product Range:</h4>
         <ul>
-          <li><strong>Primary Filtration:</strong> Coarse particle capture for equipment protection and pre-filtering</li>
-          <li><strong>Secondary Systems:</strong> F5-F9 rated pocket filters with extended service intervals</li>
-          <li><strong>High-Performance:</strong> Complete turbine intake systems with acoustic treatment</li>
+          <li>Ball Bearings & Roller Bearings</li>
+          <li>Thrust Bearings & Linear Bearings</li>
+          <li>Pillow Blocks & Mounted Units</li>
+          <li>Seals, Gaskets & O-Rings</li>
         </ul>
-        
-        <p>
-          <strong>Engineering Excellence:</strong> Our systems integrate filtration, cooling, and sound management 
-          technologies, creating complete solutions for demanding industrial applications.
-        </p>
       </>
     ),
-    compressed: (
+    hoses: (
       <>
-        <h2>Compressed Air Filtration</h2>
+        <h2>Hoses & Fluid Transfer</h2>
         <div className="highlight-box">
-          <p>Pure Air Solutions for Critical Industrial Processes</p>
-        </div>
-        
-        <div className="two-columns">
-          <div>
-            <h4>Protection Technologies</h4>
-            <ul>
-              <li>Complete FRL assemblies with modular configuration</li>
-              <li>Advanced coalescing for moisture & oil removal</li>
-              <li>Precision particulate filtration systems</li>
-              <li>Carbon adsorption for vapor & odor elimination</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4>Performance Specifications</h4>
-            <ul>
-              <li>ASME-certified for flows up to 25,000 scfm</li>
-              <li>Energy-optimized low pressure drop designs</li>
-              <li>High-pressure rated systems (5,000 psig)</li>
-              <li>Stainless construction for corrosive environments</li>
-            </ul>
-          </div>
-        </div>
-      </>
-    ),
-    hydraulic: (
-      <>
-        <h2>Hydraulic Filtration</h2>
-        <div className="highlight-box">
-          <p>Protect, Extend, Perform: The Power of Clean Hydraulic Systems</p>
+          <p>Reliable Fluid Transfer Solutions</p>
         </div>
         
         <p>
-          Contamination is the primary enemy of hydraulic system performance. Our advanced filtration solutions 
-          protect your equipment investment, minimize downtime, and extend fluid life through strategic 
-          contaminant control.
+          Premium hydraulic hoses, industrial hoses, and fluid transfer components designed to handle various pressures,
+          temperatures, and media types in demanding industrial environments.
         </p>
         
-        <div className="two-columns">
-          <div>
-            <h4>System Protection</h4>
-            <ul>
-              <li>Premium replacement elements</li>
-              <li>Stainless pressure housings</li>
-              <li>OEM-compatible components</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4>Performance Enhancement</h4>
-            <ul>
-              <li>System redesign & upgrades</li>
-              <li>Offline filtration units</li>
-              <li>Oil sampling & testing</li>
-            </ul>
-          </div>
-        </div>
-        
-        <p><strong>OG Services:</strong> Your complete hydraulic filtration partner from component supply 
-           to system design and fluid management.</p>
-      </>
-    ),
-    dryers: (
-      <>
-        <h2>Compressed Air Dryers</h2>
-        <div className="highlight-box">
-          <p>Moisture-Free Air for Critical Applications</p>
-        </div>
-        
-        <p>
-          Moisture in compressed air systems leads to corrosion, equipment failure, and product contamination. 
-          Our specialized drying systems eliminate these risks, delivering consistently dry air that meets 
-          your most demanding specifications.
-        </p>
-        
-        <div className="two-columns">
-          <div>
-            <h4>Performance Features</h4>
-            <ul>
-              <li>Ultra-low dew points (-40°F/-40°C)</li>
-              <li>Energy-efficient membrane technology</li>
-              <li>Continuous unattended operation</li>
-              <li>Explosion-proof options available</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4>Design Advantages</h4>
-            <ul>
-              <li>Minimal maintenance requirements</li>
-              <li>Silent operational profile</li>
-              <li>Compact, space-saving form factor</li>
-              <li>Rapid element replacement</li>
-            </ul>
-          </div>
-        </div>
-      </>
-    ),
-    air: (
-      <>
-        <h2>Engine Air Filtration</h2>
-        <div className="highlight-box">
-          <p>The First Line of Defense for Your Engine Investment</p>
-        </div>
-        
-        <p>
-          In modern diesel engines, air purity directly impacts performance, fuel efficiency, and service life. 
-          Our engineered filtration solutions provide superior protection against the particles and contaminants 
-          that cause premature wear and reduced performance.
-        </p>
-        
-        <h4>Filter Technologies:</h4>
+        <h4>Hose Categories:</h4>
         <ul>
-          <li><strong>Automotive Series:</strong> Round and panel designs with precision-molded end caps</li>
-          <li><strong>Heavy-Duty Primary:</strong> Metal-capped elements in standard and extended life configurations</li>
-          <li><strong>Safety Elements:</strong> Secondary filters providing protection during maintenance</li>
-          <li><strong>Radial Seal Technology:</strong> Advanced designs with reinforced ends for simplified service</li>
+          <li>Hydraulic Hoses & Assemblies</li>
+          <li>Industrial & Chemical Hoses</li>
+          <li>Pneumatic Hoses & Tubing</li>
+          <li>Specialty Application Hoses</li>
         </ul>
-        
-        <p>
-          <strong>Kazakhstan's Premier Source:</strong> OG Services maintains the region's most 
-          comprehensive engine filtration inventory, ensuring immediate availability of critical components.
-        </p>
       </>
     ),
-    hydrocarbon: (
+    fasteners: (
       <>
-        <h2>Hydrocarbon Filtration</h2>
+        <h2>Fasteners & Hardware</h2>
         <div className="highlight-box">
-          <p>Precision Filtration for Oil, Gas, and Petrochemical Applications</p>
+          <p>Complete Fastening Solutions</p>
         </div>
         
         <p>
-          In hydrocarbon processing, contaminant control directly impacts product quality, equipment longevity, 
-          and operational safety. Our specialized solutions address the unique challenges of petroleum-based 
-          media through targeted filtration technologies.
+          Comprehensive range of fasteners, hardware, and connection components for industrial assembly and maintenance.
+          Available in various materials and grades to meet specific application requirements.
         </p>
         
-        <h4>Industry Applications:</h4>
+        <h4>Product Categories:</h4>
         <ul>
-          <li><strong>Upstream:</strong> Wellhead protection, production separation, and injection system filtration</li>
-          <li><strong>Midstream:</strong> Pipeline transfer, compression systems, and terminal operations</li>
-          <li><strong>Downstream:</strong> Refinery processes, product polishing, and distribution systems</li>
+          <li>Bolts, Screws & Threaded Fasteners</li>
+          <li>Nuts, Washers & Spacers</li>
+          <li>Anchors & Specialty Fasteners</li>
+          <li>Stainless Steel & Alloy Options</li>
+        </ul>
+      </>
+    ),
+    consumables: (
+      <>
+        <h2>General Consumables</h2>
+        <div className="highlight-box">
+          <p>Essential Maintenance & Operational Supplies</p>
+        </div>
+        
+        <p>
+          Wide range of general consumables and maintenance supplies essential for day-to-day operations.
+          Quality products that help maintain equipment performance and operational efficiency.
+        </p>
+        
+        <h4>Consumable Categories:</h4>
+        <ul>
+          <li>Lubricants & Greases</li>
+          <li>Adhesives & Sealants</li>
+          <li>Cleaning & Maintenance Chemicals</li>
+          <li>Safety & PPE Supplies</li>
         </ul>
       </>
     )

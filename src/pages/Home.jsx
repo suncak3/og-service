@@ -121,23 +121,6 @@ const Home = () => {
             </div>
 
             <div className="product-categories-grid">
-              <Link to="/products?category=filters" className="category-card animate-on-scroll">
-                <div className="category-image">
-                  <img src={filters} alt="Filters" />
-                </div>
-                <div className="category-overlay">
-                  <h3>FILTERS</h3>
-                </div>
-              </Link>
-  
-              <Link to="/products?category=belts" className="category-card animate-on-scroll">
-                <div className="category-image">
-                  <img src={belts_2} alt="Belts" />
-                </div>
-                <div className="category-overlay">
-                  <h3>BELTS</h3>
-                </div>
-              </Link>
 
               <Link to="/products?category=spare-parts" className="category-card animate-on-scroll">
                 <div className="category-image">
