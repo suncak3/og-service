@@ -12,10 +12,10 @@ import global_2 from "../assets/icons/global-2.png"
 import clients from "../assets/icons/clients.png"
 import products from "../assets/icons/products.png"
 import pall from "../assets/logos/pall.png"
-import afpro from "../assets/logos/afpro.png"
+import norbar from "../assets/logos/norbar.png"
 import camfil from "../assets/logos/camfil.png"
-import jasun from "../assets/logos/jasun.png"
-import fleetguard from "../assets/logos/fleetguard.png"
+import parker from "../assets/logos/parker.png"
+import gates from "../assets/logos/gates.png"
 
 
 
@@ -48,7 +48,7 @@ const About = () => {
       <section className="about-hero">
         <div className="about-hero-content">
           <h1>About OG Services</h1>
-          <p>Pioneering Filtration Excellence Since 2012</p>
+          <p>Industrial Supply & Advanced Technology Services Since 2012</p>
           <div className="hero-cta">
             <Link to="/contact" className="btn btn-accent">Talk to an Expert</Link>
           </div>
@@ -62,17 +62,18 @@ const About = () => {
           <div className="overview-grid">
             <div className="overview-text animate-on-scroll">
               <span className="section-tag">WHO WE ARE</span>
-              <h2>Leading the Filtration Industry with Innovation & Expertise</h2>
+              <h2>Leading Industrial Supply & Technology Solutions Provider</h2>
               <p className="lead-text">
-                From our humble beginnings in Kazakhstan to becoming a regional leader in industrial filtration solutions, 
-                OG Services has consistently pushed the boundaries of what's possible in filtration technology.
+                From our establishment in Kazakhstan to becoming a regional leader in industrial supply and advanced 
+                technology services, OG Services has consistently delivered comprehensive solutions that drive 
+                operational excellence across multiple industries.
               </p>
               <div className="text-divider"></div>
               <p>
-                Founded in 2012, OG Services has grown from a small local supplier to a regional
-                leader in industrial filtration solutions. With headquarters in Astana, Kazakhstan,
-                we now serve customers in several countries across the region, offering an extensive range
-                of filtration products from the most respected brands in the industry.
+                Founded in 2012, OG Services has evolved from a specialized supplier to a comprehensive solutions 
+                provider offering both premium industrial materials and cutting-edge technology services. With 
+                headquarters in Astana, Kazakhstan, we serve customers across multiple countries, delivering 
+                industrial supplies, IT solutions, and transportation services from globally recognized manufacturers and partners.
               </p>
             </div>
             <div className="overview-image animate-on-scroll">
@@ -97,7 +98,7 @@ const About = () => {
               <div className="timeline-year">2012</div>
               <div className="timeline-content">
                 <h3>Foundation</h3>
-                <p>OG Services was established in Astana with a team of 5 dedicated professionals.</p>
+                <p>OG Services was established in Astana with a team of 5 dedicated professionals focusing on industrial supply solutions.</p>
               </div>
             </div>
             
@@ -105,7 +106,7 @@ const About = () => {
               <div className="timeline-year">2015</div>
               <div className="timeline-content">
                 <h3>Regional Expansion</h3>
-                <p>Regional expansion within the whole Kazakhstan.</p>
+                <p>Regional expansion within the whole Kazakhstan, extending our industrial supply capabilities nationwide.</p>
               </div>
             </div>
             
@@ -113,23 +114,23 @@ const About = () => {
               <div className="timeline-year">2020</div>
               <div className="timeline-content">
                 <h3>Global Partnerships</h3>
-                <p>Formed strategic alliances with leading manufacturers including PALL and Camfil.</p>
+                <p>Formed strategic alliances with leading manufacturers including PALL, Parker, Gates, Camfil, and Norbar.</p>
               </div>
             </div>
             
             <div className="timeline-item animate-on-scroll">
               <div className="timeline-year">2022</div>
               <div className="timeline-content">
-                <h3>Rebranding and Digital Transformation</h3>
-                <p>Launched our digital platform, making product selection and ordering more efficient.</p>
+                <h3>Service Diversification & Digital Transformation</h3>
+                <p>Expanded into IT and transportation services while launching our digital platform for enhanced customer experience.</p>
               </div>
             </div>
             
             <div className="timeline-item animate-on-scroll">
               <div className="timeline-year">Today</div>
               <div className="timeline-content">
-                <h3>Trusted partner</h3>
-                <p>For several high profile oil & gas operating companies and other industries in Kazakhstan, Russia and Uzbekistan.</p>
+                <h3>Comprehensive Solutions Provider</h3>
+                <p>Trusted partner for industrial supplies and technology services across oil & gas, manufacturing, and other industries in Kazakhstan, Russia and Uzbekistan.</p>
               </div>
             </div>
           </div>
@@ -146,9 +147,9 @@ const About = () => {
               </div>
               <h2>Our Mission</h2>
               <p>
-                At OG Services, our mission is to deliver exceptional value through innovative
-                filtration solutions that enhance operational efficiency, reduce environmental impact,
-                and drive sustainable growth for our clients worldwide.
+                At OG Services, our mission is to deliver exceptional value through comprehensive industrial 
+                supply solutions and advanced technology services that enhance operational efficiency, drive 
+                innovation, and support sustainable growth for our clients across diverse industries.
               </p>
             </div>
             
@@ -158,9 +159,9 @@ const About = () => {
               </div>
               <h2>Our Vision</h2>
               <p>
-                To set the global standard in filtration and power transmission solutions, driving innovation, 
-                sustainability, and superior quality to keep the world moving forward into a cleaner, more 
-                efficient future.
+                To be the leading provider of integrated industrial supply and technology solutions in Central Asia, 
+                setting new standards for quality, innovation, and service excellence while driving our clients' 
+                success through comprehensive, future-ready solutions.
               </p>
             </div>
           </div>
@@ -178,22 +179,22 @@ const About = () => {
           <div className="values-grid">
             <div className="value-card animate-on-scroll">
               <h3 data-number="01">Excellence</h3>
-              <p>We are committed to excellence in everything we do, from product quality to customer service, constantly striving to exceed expectations. Our dedication to superior standards ensures that every filtration solution we provide represents the pinnacle of industry capabilities.</p>
+              <p>We are committed to excellence in everything we do, from product quality and service delivery to technology implementation, constantly striving to exceed expectations. Our dedication to superior standards ensures that every solution we provide represents the pinnacle of industry capabilities.</p>
             </div>
             
             <div className="value-card animate-on-scroll">
               <h3 data-number="02">Innovation</h3>
-              <p>We embrace innovation and continuously seek better solutions for our clients' challenges, staying at the forefront of industry developments. By investing in research and advanced technologies, we push the boundaries of what's possible in filtration systems.</p>
+              <p>We embrace innovation and continuously seek better solutions for our clients' challenges, staying at the forefront of industry developments. By investing in advanced technologies and progressive methodologies, we push the boundaries of what's possible in both industrial supply and technology services.</p>
             </div>
             
             <div className="value-card animate-on-scroll">
               <h3 data-number="03">Reliability</h3>
-              <p>We build trust through consistency, dependability, and transparent business practices, becoming a partner our clients can count on. Our commitment to reliability extends throughout our operations, from product performance to delivery timelines and service excellence.</p>
+              <p>We build trust through consistency, dependability, and transparent business practices, becoming a partner our clients can count on. Our commitment to reliability extends throughout our operations, from product performance to service delivery timelines and technical support excellence.</p>
             </div>
             
             <div className="value-card animate-on-scroll">
-              <h3 data-number="04">Sustainability</h3>
-              <p>We prioritize environmentally responsible products and practices across our operations, contributing to a healthier planet. By developing energy-efficient filtration solutions and implementing eco-friendly business processes, we help our clients meet their sustainability goals.</p>
+              <h3 data-number="04">Comprehensive Solutions</h3>
+              <p>We provide integrated solutions that combine premium industrial supplies with advanced technology services, creating synergies that deliver greater value. Our holistic approach ensures clients receive end-to-end support for all their operational and technological needs.</p>
             </div>
           </div>
         </div>
@@ -206,8 +207,8 @@ const About = () => {
             <span className="section-tag">OUR SPECIALTIES</span>
             <h2>Industry Expertise</h2>
             <p className="section-subtitle">
-              Our team of filtration experts possesses deep technical knowledge across various industries, 
-              ensuring tailored solutions for every client.
+              Our team possesses deep technical knowledge across various industries, providing comprehensive 
+              industrial supply and technology solutions tailored to each sector's unique requirements.
             </p>
           </div>
           
@@ -242,16 +243,16 @@ const About = () => {
             
             <div className="expertise-card animate-on-scroll">
               <div className="expertise-icon">
-                <img src={oil} alt="Pharmaceuticals" />
+                <img src={oil} alt="Infrastructure" />
               </div>
-              <h3>Pharmaceuticals</h3>
+              <h3>Infrastructure</h3>
             </div>
             
             <div className="expertise-card animate-on-scroll">
               <div className="expertise-icon">
-                <img src={manufacturing} alt="Water Treatment" />
+                <img src={manufacturing} alt="Transportation" />
               </div>
-              <h3>Water Treatment</h3>
+              <h3>Transportation</h3>
             </div>
             
             <div className="expertise-card animate-on-scroll">
@@ -263,9 +264,9 @@ const About = () => {
             
             <div className="expertise-card animate-on-scroll">
               <div className="expertise-icon">
-                <img src={manufacturing} alt="Chemical Processing" />
+                <img src={manufacturing} alt="Technology Services" />
               </div>
-              <h3>Chemical Processing</h3>
+              <h3>Technology Services</h3>
             </div>
           </div>
         </div>
@@ -277,16 +278,17 @@ const About = () => {
           <div className="global-grid">
             <div className="global-text animate-on-scroll">
               <span className="section-tag">OUR REACH</span>
-              <h2>International presence</h2>
+              <h2>Regional Leadership with Global Standards</h2>
               <p>
-                While we operate on a global scale, we maintain a commitment to providing personalized,
-                responsive service to each client. Our local representatives are always available to
-                offer technical support, product guidance, and prompt solutions to your filtration challenges.
+                While we maintain strong regional presence and deep understanding of local markets, we operate 
+                according to international standards and best practices. Our local representatives provide 
+                personalized service with technical expertise, product guidance, and technology support to 
+                address your operational challenges promptly and effectively.
               </p>
               <p>
-                Through strategic partnerships with the world's leading filter and belt manufacturers,
-                we ensure a reliable supply chain and competitive pricing for our customers, no matter
-                where they are located.
+                Through strategic partnerships with world-leading manufacturers and technology providers,
+                we ensure reliable supply chains, competitive pricing, and access to cutting-edge solutions 
+                for our customers throughout Kazakhstan, Russia, and Uzbekistan.
               </p>
               <Link to="/contact" className="btn btn-primary">Contact Your Local Office</Link>
             </div>
@@ -343,7 +345,7 @@ const About = () => {
               </div>
               <div className="stat-content">
                 <div className="stat-number">200+</div>
-                <div className="stat-label">PRODUCTS AVAILABLE</div>
+                <div className="stat-label">SOLUTIONS AVAILABLE</div>
               </div>
             </div>
           </div>
@@ -357,8 +359,8 @@ const About = () => {
             <span className="section-tag">OUR PARTNERS</span>
             <h2>Trusted Brands We Represent</h2>
             <p className="section-subtitle">
-              We are proud to partner with the most prestigious names in industrial filtration and power
-              transmission, ensuring our clients receive only the highest quality products.
+              We are proud to partner with the most prestigious names in industrial supply and technology solutions, 
+              ensuring our clients receive only the highest quality products and services.
             </p>
           </div>
           <div className="brands-container animate-on-scroll">
@@ -370,13 +372,13 @@ const About = () => {
               <img src={camfil} alt="Camfil" />
             </div>
             <div className="brand-logo">
-              <img src={jasun} alt="JASUN" />
+              <img src={parker} alt="Parker" />
             </div>
             <div className="brand-logo">
-              <img src={fleetguard} alt="Fleetguard" />
+              <img src={gates} alt="Gates" />
             </div>
             <div className="brand-logo">
-              <img src={afpro} alt="AFPRO" />
+              <img src={norbar} alt="Norbar" />
             </div>
             </div>
           </div>
@@ -387,8 +389,8 @@ const About = () => {
       <section className="about-cta-section">
         <div className="container">
           <div className="cta-content animate-on-scroll">
-            <h2>Ready to Enhance Your Filtration Systems?</h2>
-            <p>Let our experts help you find the perfect solution for your specific needs.</p>
+            <h2>Ready to Enhance Your Operations?</h2>
+            <p>Let our experts help you find the perfect industrial supply and technology solutions for your specific needs.</p>
             <div className="cta-buttons">
               <Link to="/products" className="btn btn-light">Explore Products</Link>
               <Link to="/contact" className="btn btn-accent">Contact Us</Link>
