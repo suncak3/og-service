@@ -49,24 +49,22 @@ const Footer = () => {
             </div>
 
             <div className="footer-column">
-              <h3 className="footer-title">Filters</h3>
+              <h3 className="footer-title">Products</h3>
               <ul className="footer-links">
-                <li>PALL</li>
-                <li>Camfil</li>
-                <li>HIGGINS AND HEWINS</li>
-                <li>AF Pro</li>
-                <li>Hochiki</li>
-                <li>Purafil</li>
+                <li><Link to="/products?category=spare-parts">Spare Parts</Link></li>
+                <li><Link to="/products?category=piping">Piping and Fittings</Link></li>
+                <li><Link to="/products?category=tools">Tools</Link></li>
+                <li><Link to="/products?category=electrical">Electrical equipment</Link></li>
+                <li><Link to="/products?category=equipment">Processing equipment</Link></li>
+                <li><Link to="/products?category=valves">Valves</Link></li>
               </ul>
             </div>
 
             <div className="footer-column">
-              <h3 className="footer-title">Belts</h3>
+              <h3 className="footer-title">Services</h3>
               <ul className="footer-links">
-                <li>Gates</li>
-                <li>Continental (Contitech)</li>
-                <li>Optibelt </li>
-                <li>Dunham Bush</li>
+                <li><Link to="/services">IT Services</Link></li>
+                <li><Link to="/services">Transportation Services</Link></li>
               </ul>
             </div>
           </div>
