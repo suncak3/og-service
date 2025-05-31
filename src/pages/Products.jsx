@@ -58,6 +58,8 @@ import flowserve from "../assets/logos/flowserve.png";
 import parkerhannifin from "../assets/logos/parker.png"; 
 import imi from "../assets/logos/imi.png"; 
 import samson from "../assets/logos/samson.png"; 
+import wurth from "../assets/logos/wurth.svg"; 
+import bosch from "../assets/logos/bosch.png";
 
 import parts from "../assets/images/Parts-removebg-preview.png";
 import fittings from "../assets/images/fittings-removebg-preview.png";
@@ -171,7 +173,9 @@ const Products = () => {
         { id: "herrenknecht", name: "Herrenknecht", logo: herrenknecht },
         { id: "wera", name: "Wera Tools", logo: wera },
         { id: "ridgid", name: "Ridgid", logo: ridgid },
-        { id: "norbar", name: "Norbar", logo: norbar }
+        { id: "norbar", name: "Norbar", logo: norbar },
+        { id: "wurth", name: "Wurth", logo: wurth },
+        { id: "bosch", name: "Bosch", logo: bosch }
       ]
     },
     {
