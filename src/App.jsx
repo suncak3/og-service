@@ -9,6 +9,7 @@ import Contact from "./pages/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Services from "./pages/Services.jsx";
 import ServiceDetail from "./pages/ServiceDetail.jsx";
+import i18n from './i18n'; // Uncomment if you want to use i18n for translations
 
 function App() {
   return (

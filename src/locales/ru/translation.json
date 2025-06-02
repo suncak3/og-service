@@ -1,0 +1,17 @@
+{
+    "header": {
+      "phone": "+7 707 466 1423",
+      "hours": "Пн - Пт 09:00 - 17:00",
+      "email": "info@ogservices.kz",
+      "emailLabel": "Напишите нам",
+      "callLabel": "Позвоните нам",
+      "getQuote": "ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ",
+      "nav": {
+        "home": "ГЛАВНАЯ",
+        "about": "О НАС",
+        "products": "ПРОДУКТЫ",
+        "services": "УСЛУГИ",
+        "contact": "СВЯЗАТЬСЯ С НАМИ"
+      }
+    }
+}

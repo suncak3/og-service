@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import logo from "../assets/logos/Logo.png"
 import phone from "../assets/icons/Phone.png"
 import location from "../assets/icons/Location.png"
@@ -10,6 +11,7 @@ const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const navigate = useNavigate();
+    const { t, i18n } = useTranslation();
 
     // Handle scroll effect
     useEffect(() => {
@@ -44,6 +46,12 @@ const Header = () => {
         setMobileMenuOpen(false); // Close menu if open
     };
 
+    // Language switcher function
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+        setMobileMenuOpen(false); // Close mobile menu if open
+    };
+
     return (
         <header className={`header ${scrolled ? 'scrolled' : ''}`}>
             {/* Top info bar - hidden on mobile */}
@@ -51,14 +59,30 @@ const Header = () => {
                 <div className="header-contact">
                     <div>
                         <img src={phone} alt="phone icon"/> 
-                        +7 707 466 1423
+                        {t('header.phone')}
                     </div>
                     <div>
                         <img src={clock} alt="clock icon"/>
-                        Mon - Fri 09:00 - 17:00
+                        {t('header.hours')}
                     </div>  
                 </div>
-                {/* Mail icon removed */}
+                
+                {/* Language switcher for desktop */}
+                <div className="language-switcher">
+                    <button 
+                        className={`lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
+                        onClick={() => changeLanguage('en')}
+                    >
+                        EN
+                    </button>
+                    <span className="lang-separator">|</span>
+                    <button 
+                        className={`lang-btn ${i18n.language === 'ru' ? 'active' : ''}`}
+                        onClick={() => changeLanguage('ru')}
+                    >
+                        RU
+                    </button>
+                </div>
             </div>
             
             {/* Main header section */}
@@ -70,14 +94,16 @@ const Header = () => {
                 {/* Desktop header info - hidden on mobile */}
                 <div className="header-info">
                     <div>
-                        <p className="info-label">Email us</p>
-                        <p className="info-value"> info@ogservices.kz</p>
+                        <p className="info-label">{t('header.emailLabel')}</p>
+                        <p className="info-value">{t('header.email')}</p>
                     </div>
                     <div>
-                        <p className="info-label">Call us</p>
-                        <p className="info-value">+7 707 466 1423</p>
+                        <p className="info-label">{t('header.callLabel')}</p>
+                        <p className="info-value">{t('header.phone')}</p>
                     </div>
-                    <button className="header-button" onClick={handleGetQuote}>GET QUOTE</button>
+                    <button className="header-button" onClick={handleGetQuote}>
+                        {t('header.getQuote')}
+                    </button>
                 </div>
 
                 {/* Mobile burger menu */}
@@ -97,40 +123,61 @@ const Header = () => {
                     <a href="/" onClick={(e) => {
                         e.preventDefault();
                         closeMenuAndNavigate('/');
-                    }}>HOME</a>
+                    }}>{t('header.nav.home')}</a>
                     
                     <a href="/about" onClick={(e) => {
                         e.preventDefault();
                         closeMenuAndNavigate('/about');
-                    }}>ABOUT</a>
+                    }}>{t('header.nav.about')}</a>
                     
                     <a href="/products" onClick={(e) => {
                         e.preventDefault();
                         closeMenuAndNavigate('/products');
-                    }}>PRODUCTS</a>
+                    }}>{t('header.nav.products')}</a>
 
                     <a href="/services" onClick={(e) => {
                         e.preventDefault();
                         closeMenuAndNavigate('/services');
-                    }}>SERVICES</a>
+                    }}>{t('header.nav.services')}</a>
                     
                     <a href="/contact" onClick={(e) => {
                         e.preventDefault();
                         closeMenuAndNavigate('/contact');
-                    }}>CONTACT US</a>
+                    }}>{t('header.nav.contact')}</a>
                 </div>
 
                 {/* Mobile-only contact info shown in menu */}
                 <div className="mobile-contact-info">
                     <div className="mobile-contact-item">
                         <img src="/assets/icons/phone.png" alt="phone icon"/>
-                        <p>+7 707 466 1423</p>
+                        <p>{t('header.phone')}</p>
                     </div>
                     <div className="mobile-contact-item">
                         <img src="/assets/icons/mail.png" alt="mail icon"/>
-                        <p>info@ogservices.kz</p>
+                        <p>{t('header.email')}</p>
                     </div>
-                    <button className="mobile-quote-btn" onClick={handleGetQuote}>GET QUOTE</button>
+                    <button className="mobile-quote-btn" onClick={handleGetQuote}>
+                        {t('header.getQuote')}
+                    </button>
+                    
+                    {/* Mobile language switcher */}
+                    <div className="mobile-language-switcher">
+                        <h4>Language / Язык</h4>
+                        <div className="mobile-lang-buttons">
+                            <button 
+                                className={`mobile-lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
+                                onClick={() => changeLanguage('en')}
+                            >
+                                English
+                            </button>
+                            <button 
+                                className={`mobile-lang-btn ${i18n.language === 'ru' ? 'active' : ''}`}
+                                onClick={() => changeLanguage('ru')}
+                            >
+                                Русский
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </nav>
 
