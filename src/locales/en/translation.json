@@ -13,5 +13,34 @@
         "services": "SERVICES",
         "contact": "CONTACT US"
       }
+    },
+    "footer": {
+      "about": "Regional leader in industrial filtration solutions, providing high-quality filters and belts to enhance operational efficiency and reliability.",
+      "phone": "+7 707 466 1423",
+      "email": "info@ogservices.kz",
+      "address": "Astana, st. Konaeva 33, Office 303",
+      "quickLinks": "Quick Links",
+      "products": "Products",
+      "services": "Services",
+      "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "products": "Products",
+        "services": "Services",
+        "contact": "Contact Us"
+      },
+      "productCategories": {
+        "spareParts": "Spare Parts",
+        "piping": "Piping and Fittings",
+        "tools": "Tools",
+        "electrical": "Electrical equipment",
+        "equipment": "Processing equipment",
+        "valves": "Valves"
+      },
+      "serviceTypes": {
+        "it": "IT Services",
+        "transportation": "Transportation Services"
+      },
+      "copyright": "All Rights Reserved."
     }
   }
