@@ -212,5 +212,163 @@
       "exploreButton": "Explore Products",
       "contactButton": "Contact Us"
     }
+  },
+
+  "products": {
+  "hero": {
+    "title": "Our Products",
+    "subtitle": "Premium Quality Solutions for Industrial Excellence"
+  },
+  "tabs": {
+    "all": "All Products"
+  },
+  "categories": {
+    "spareParts": "Spare Parts & Components",
+    "piping": "Piping, Flanges & Fittings",
+    "tools": "Hand & Specialized Tools",
+    "electrical": "Electrical Equipment",
+    "equipment": "Processing Equipment",
+    "valves": "Valves"
+  },
+  "descriptions": {
+    "spareParts": "Essential spare parts and components including bearings, hoses, sleeves, fittings, fasteners, general consumables, advanced filtration solutions, and premium quality power transmission belts for industrial equipment maintenance and repair.",
+    "piping": "Comprehensive range of piping solutions including carbon/stainless steel pipes, alloy pipes, PVC, HDPE, flanges, blinds, and fittings for various industrial applications.",
+    "tools": "Professional-grade hand and specialized tools including pipe benders & threaders, flange alignment tools, torque wrenches & multipliers, valve turners, pump maintenance tools, welding & cutting tools, and pressure testers & inspection tools.",
+    "electrical": "High-quality electrical equipment including electric motors, transformers, distribution boards, uninterruptible power supplies (UPS), power and control cables, voltage stabilizers, and more for industrial applications.",
+    "equipment": "Standalone processing equipment including milling machines, filtration units, mixing equipment, separation equipment, crushing and grinding equipment, pumps and pumping systems, boilers, expansion tanks, measurement and monitoring equipment, and welding and cutting equipment.",
+    "valves": "Comprehensive valve solutions including gate valves, globe valves, ball valves, butterfly valves, check valves, plug valves, needle valves, pressure relief valves, control valves, safety valves, diaphragm valves, and pinch valves for various industrial applications."
+  },
+  "content": {
+    "allProductsTitle": "OG Services Industrial Solutions",
+    "allProductsHighlight": "Comprehensive Industrial Solutions Since 2005",
+    "allProductsDescription1": "At OG Services, we specialize in providing a comprehensive range of industrial products and solutions to meet the diverse needs of our clients across Kazakhstan, Russia, and Uzbekistan. Our expertise spans across multiple industries including energy production, marine applications, food processing, manufacturing, and infrastructure development.",
+    "allProductsDescription2": "Through partnerships with leading global manufacturers, we deliver premium-quality products that improve efficiency, enhance safety, and optimize performance in industrial operations. Our commitment to excellence ensures that our clients receive the best solutions tailored to their specific requirements.",
+    "companyFact": "Headquartered in Astana, Kazakhstan with 4 strategic warehouse facilities nationwide",
+    "categoryHighlight": "Premium Quality for Industrial Applications"
+  },
+  "productTypes": {
+    "title": "Products",
+    "filters": "Filtration Solutions",
+    "belts": "Power Transmission Belts",
+    "bearings": "Bearings & Mechanical Components",
+    "hoses": "Hoses & Fluid Transfer",
+    "fasteners": "Fasteners & Hardware",
+    "consumables": "General Consumables"
+  },
+  "productTypeDetails": {
+    "filters": {
+      "title": "Filtration Solutions",
+      "highlight": "Advanced Filtration Systems for Industrial and Commercial Applications",
+      "description": "OG Services delivers comprehensive filtration solutions that maintain efficiency even in extreme conditions. Our systems are designed for pharmaceutical purity to industrial ruggedness, ensuring consistent performance when you need it most.",
+      "categories": {
+        "title": "Filtration Categories:",
+        "items": [
+          "Process Filtration Systems",
+          "HVAC Air Filtration", 
+          "Compressed Air Filtration",
+          "Hydrocarbon Filtration",
+          "Hydraulic Filtration",
+          "Engine Air Filtration"
+        ]
+      },
+      "capabilities": {
+        "title": "Key Capabilities:",
+        "items": [
+          "Custom Engineering Services",
+          "Performance Cost Analysis",
+          "Inventory Management",
+          "24/7 Technical Support"
+        ]
+      }
+    },
+    "belts": {
+      "title": "Power Transmission Belts",
+      "highlight": "Premium Quality Belts for Industrial Power Transmission",
+      "description": "Our belt solutions provide optimal performance, durability, and efficiency for diverse mechanical drive systems. From heavy-duty industrial applications to precision machinery, we offer the right belt technology for your needs.",
+      "types": {
+        "title": "Belt Types:",
+        "items": [
+          "V-Belts & Wedge Belts",
+          "Synchronous/Timing Belts",
+          "Flat Belts & Conveyor Belts",
+          "Variable Speed Belts"
+        ]
+      },
+      "applications": {
+        "title": "Applications:",
+        "items": [
+          "Industrial Machinery",
+          "HVAC Systems",
+          "Automotive Applications",
+          "Agricultural Equipment"
+        ]
+      }
+    },
+    "bearings": {
+      "title": "Bearings & Mechanical Components",
+      "highlight": "Precision Bearings for Reliable Operation",
+      "description": "High-quality bearings and mechanical components essential for smooth operation and extended equipment life. Our comprehensive range covers various applications from light-duty to heavy industrial use.",
+      "range": {
+        "title": "Product Range:",
+        "items": [
+          "Ball Bearings & Roller Bearings",
+          "Thrust Bearings & Linear Bearings",
+          "Pillow Blocks & Mounted Units",
+          "Seals, Gaskets & O-Rings"
+        ]
+      }
+    },
+    "hoses": {
+      "title": "Hoses & Fluid Transfer",
+      "highlight": "Reliable Fluid Transfer Solutions",
+      "description": "Premium hydraulic hoses, industrial hoses, and fluid transfer components designed to handle various pressures, temperatures, and media types in demanding industrial environments.",
+      "categories": {
+        "title": "Hose Categories:",
+        "items": [
+          "Hydraulic Hoses & Assemblies",
+          "Industrial & Chemical Hoses",
+          "Pneumatic Hoses & Tubing",
+          "Specialty Application Hoses"
+        ]
+      }
+    },
+    "fasteners": {
+      "title": "Fasteners & Hardware",
+      "highlight": "Complete Fastening Solutions",
+      "description": "Comprehensive range of fasteners, hardware, and connection components for industrial assembly and maintenance. Available in various materials and grades to meet specific application requirements.",
+      "categories": {
+        "title": "Product Categories:",
+        "items": [
+          "Bolts, Screws & Threaded Fasteners",
+          "Nuts, Washers & Spacers",
+          "Anchors & Specialty Fasteners",
+          "Stainless Steel & Alloy Options"
+        ]
+      }
+    },
+    "consumables": {
+      "title": "General Consumables",
+      "highlight": "Essential Maintenance & Operational Supplies",
+      "description": "Wide range of general consumables and maintenance supplies essential for day-to-day operations. Quality products that help maintain equipment performance and operational efficiency.",
+      "categories": {
+        "title": "Consumable Categories:",
+        "items": [
+          "Lubricants & Greases",
+          "Adhesives & Sealants",
+          "Cleaning & Maintenance Chemicals",
+          "Safety & PPE Supplies"
+        ]
+      }
+    }
+  },
+  "brands": {
+    "featured": "Featured Brands",
+    "categoryBrands": "Category Brands"
+  },
+  "cta": {
+    "title": "Need Help Finding the Right Product?",
+    "description": "Our team of experts is ready to assist you with personalized recommendations.",
+    "button": "Contact Us"
   }
+}
 }
