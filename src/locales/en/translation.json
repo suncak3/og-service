@@ -105,5 +105,112 @@
       "description": "Contact our team today for expert advice and comprehensive product information.",
       "button": "Get in Touch"
     }
+  },
+  "about": {
+    "hero": {
+      "title": "About OG Services",
+      "subtitle": "Industrial Supply & Advanced Technology Services Since 2012",
+      "button": "Talk to an Expert"
+    },
+    "overview": {
+      "tag": "WHO WE ARE",
+      "title": "Leading Industrial Supply & Technology Solutions Provider",
+      "leadText": "From our establishment in Kazakhstan to becoming a regional leader in industrial supply and advanced technology services, OG Services has consistently delivered comprehensive solutions that drive operational excellence across multiple industries.",
+      "description": "Founded in 2012, OG Services has evolved from a specialized supplier to a comprehensive solutions provider offering both premium industrial materials and cutting-edge technology services. With headquarters in Astana, Kazakhstan, we serve customers across multiple countries, delivering industrial supplies, IT solutions, and transportation services from globally recognized manufacturers and partners."
+    },
+    "timeline": {
+      "tag": "OUR JOURNEY",
+      "title": "Milestones That Shaped Our Legacy",
+      "today": "Today",
+      "milestones": {
+        "2012": {
+          "title": "Foundation",
+          "description": "OG Services was established in Astana with a team of 5 dedicated professionals focusing on industrial supply solutions."
+        },
+        "2015": {
+          "title": "Regional Expansion",
+          "description": "Regional expansion within the whole Kazakhstan, extending our industrial supply capabilities nationwide."
+        },
+        "2020": {
+          "title": "Global Partnerships",
+          "description": "Formed strategic alliances with leading manufacturers including PALL, Parker, Gates, Camfil, and Norbar."
+        },
+        "2022": {
+          "title": "Service Diversification & Digital Transformation",
+          "description": "Expanded into IT and transportation services while launching our digital platform for enhanced customer experience."
+        },
+        "today": {
+          "title": "Comprehensive Solutions Provider",
+          "description": "Trusted partner for industrial supplies and technology services across oil & gas, manufacturing, and other industries in Kazakhstan, Russia and Uzbekistan."
+        }
+      }
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "At OG Services, our mission is to deliver exceptional value through comprehensive industrial supply solutions and advanced technology services that enhance operational efficiency, drive innovation, and support sustainable growth for our clients across diverse industries."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the leading provider of integrated industrial supply and technology solutions in Central Asia, setting new standards for quality, innovation, and service excellence while driving our clients' success through comprehensive, future-ready solutions."
+    },
+    "values": {
+      "tag": "OUR PRINCIPLES",
+      "title": "Core Values That Drive Us",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We are committed to excellence in everything we do, from product quality and service delivery to technology implementation, constantly striving to exceed expectations. Our dedication to superior standards ensures that every solution we provide represents the pinnacle of industry capabilities."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We embrace innovation and continuously seek better solutions for our clients' challenges, staying at the forefront of industry developments. By investing in advanced technologies and progressive methodologies, we push the boundaries of what's possible in both industrial supply and technology services."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "We build trust through consistency, dependability, and transparent business practices, becoming a partner our clients can count on. Our commitment to reliability extends throughout our operations, from product performance to service delivery timelines and technical support excellence."
+      },
+      "comprehensive": {
+        "title": "Comprehensive Solutions",
+        "description": "We provide integrated solutions that combine premium industrial supplies with advanced technology services, creating synergies that deliver greater value. Our holistic approach ensures clients receive end-to-end support for all their operational and technological needs."
+      }
+    },
+    "expertise": {
+      "tag": "OUR SPECIALTIES",
+      "title": "Industry Expertise",
+      "subtitle": "Our team possesses deep technical knowledge across various industries, providing comprehensive industrial supply and technology solutions tailored to each sector's unique requirements.",
+      "industries": {
+        "oilGas": "Oil & Gas",
+        "manufacturing": "Manufacturing",
+        "powerGeneration": "Power Generation",
+        "foodBeverage": "Food & Beverage",
+        "infrastructure": "Infrastructure",
+        "transportation": "Transportation",
+        "mining": "Mining & Minerals",
+        "technology": "Technology Services"
+      }
+    },
+    "global": {
+      "tag": "OUR REACH",
+      "title": "Regional Leadership with Global Standards",
+      "description1": "While we maintain strong regional presence and deep understanding of local markets, we operate according to international standards and best practices. Our local representatives provide personalized service with technical expertise, product guidance, and technology support to address your operational challenges promptly and effectively.",
+      "description2": "Through strategic partnerships with world-leading manufacturers and technology providers, we ensure reliable supply chains, competitive pricing, and access to cutting-edge solutions for our customers throughout Kazakhstan, Russia, and Uzbekistan.",
+      "button": "Contact Your Local Office"
+    },
+    "stats": {
+      "experience": "YEARS OF EXPERIENCE",
+      "countries": "COUNTRIES SERVED",
+      "clients": "SATISFIED CLIENTS",
+      "solutions": "SOLUTIONS AVAILABLE"
+    },
+    "brands": {
+      "tag": "OUR PARTNERS",
+      "title": "Trusted Brands We Represent",
+      "subtitle": "We are proud to partner with the most prestigious names in industrial supply and technology solutions, ensuring our clients receive only the highest quality products and services."
+    },
+    "cta": {
+      "title": "Ready to Enhance Your Operations?",
+      "description": "Let our experts help you find the perfect industrial supply and technology solutions for your specific needs.",
+      "exploreButton": "Explore Products",
+      "contactButton": "Contact Us"
+    }
   }
 }
