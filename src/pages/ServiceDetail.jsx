@@ -3,7 +3,6 @@ import { Link, useParams } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import "../styles/ServiceDetail.css";
 
-// Import service images (you'll need to add these)
 import biImage from "../assets/icons/success.png";
 import sapImage from "../assets/icons/success.png";
 import digitalOilfieldImage from "../assets/icons/success.png";
@@ -55,7 +54,7 @@ const ServiceDetail = () => {
     };
 
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Run once on initial load
+    animateOnScroll();
     
     return () => {
       window.removeEventListener('scroll', animateOnScroll);

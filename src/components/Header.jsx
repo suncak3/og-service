@@ -13,7 +13,6 @@ const Header = () => {
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
 
-    // Handle scroll effect
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
@@ -33,23 +32,21 @@ const Header = () => {
         setMobileMenuOpen(!mobileMenuOpen);
     };
 
-    // Fixed function to handle mobile navigation
     const closeMenuAndNavigate = (path) => {
-        setMobileMenuOpen(false); // Close the menu first
+        setMobileMenuOpen(false); 
         setTimeout(() => {
-          navigate(path); // Navigate after a small delay to ensure menu closes smoothly
+          navigate(path); 
         }, 50);
     };
 
     const handleGetQuote = () => {
-        navigate('/contact'); // Navigate to contact page when Get Quote is clicked
-        setMobileMenuOpen(false); // Close menu if open
+        navigate('/contact'); 
+        setMobileMenuOpen(false); 
     };
 
-    // Language switcher function
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
-        setMobileMenuOpen(false); // Close mobile menu if open
+        setMobileMenuOpen(false); 
     };
 
     return (
@@ -119,7 +116,6 @@ const Header = () => {
             {/* Navigation - Desktop visible, mobile in dropdown */}
             <nav className={`navbar ${mobileMenuOpen ? 'mobile-open' : ''}`}>
                 <div className="nav-container">
-                    {/* Fixed mobile navigation links */}
                     <a href="/" onClick={(e) => {
                         e.preventDefault();
                         closeMenuAndNavigate('/');

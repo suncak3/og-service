@@ -1,6 +1,3 @@
-/* Service Detail Page Styles */
-
-/* Animation Utilities */
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
@@ -12,7 +9,6 @@
   transform: translateY(0);
 }
 
-/* Hero Section */
 .service-detail-hero {
   position: relative;
   background-size: cover;
@@ -71,7 +67,6 @@
   box-shadow: 0 5px 15px rgba(229, 57, 53, 0.3);
 }
 
-/* Service Overview Section */
 .service-overview {
   padding: 80px 0;
   background-color: white;
@@ -101,7 +96,6 @@
   line-height: 1.8;
 }
 
-/* Features and Benefits Section */
 .service-detail-features-benefits {
   padding: 80px 0;
   background-color: #f8f9fa;
@@ -174,7 +168,6 @@
   line-height: 1.6;
 }
 
-/* Approach Section */
 .service-approach {
   padding: 80px 0;
   background-color: white;
@@ -197,7 +190,6 @@
   line-height: 1.8;
 }
 
-/* Other Services Section */
 .service-detail-other-services {
   padding: 80px 0;
   background-color: #f8f9fa;
@@ -283,7 +275,6 @@
   transform: translateX(5px);
 }
 
-/* CTA Section */
 .service-cta-section {
   padding: 80px 0;
   background-image: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('../assets/images/cta-bg.jpg');
@@ -332,7 +323,6 @@
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
-/* Service Not Found */
 .service-not-found {
   text-align: center;
   padding: 100px 0;
@@ -368,7 +358,6 @@
   box-shadow: 0 5px 15px rgba(0, 40, 85, 0.3);
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   .container {
     padding: 0 40px;

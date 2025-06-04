@@ -24,7 +24,6 @@ import gates from "../assets/logos/gates.png"
 const About = () => {
   const { t } = useTranslation();
 
-  // Add animation on scroll effect
   useEffect(() => {
     const animateOnScroll = () => {
       const elements = document.querySelectorAll('.animate-on-scroll');
@@ -38,8 +37,8 @@ const About = () => {
     };
 
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Run once on initial load
-    
+    animateOnScroll(); 
+
     return () => {
       window.removeEventListener('scroll', animateOnScroll);
     };

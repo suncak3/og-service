@@ -1,13 +1,9 @@
-/* Global styles for the OG Services website based on c-rproducts.com */
-
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Base */
   :root {
     --primary-color: #003B71;
     --primary-dark: #002850;
@@ -42,7 +38,6 @@
     flex: 1;
   }
   
-  /* Typography */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -89,7 +84,6 @@
     color: var(--accent-color);
   }
   
-  /* Container */
   .container {
     width: 100%;
     max-width: 1400px;
@@ -97,7 +91,6 @@
     margin: 0 auto;
   }
   
-  /* Sections */
   .section {
     padding: 80px 0;
   }
@@ -114,7 +107,6 @@
     margin: 0 auto 3rem;
   }
   
-  /* Buttons */
   .btn {
     display: inline-block;
     padding: 12px 28px;
@@ -156,7 +148,6 @@
     color: var(--text-light);
   }
   
-  /* Cards */
   .card {
     background-color: var(--bg-light);
     border-radius: 8px;
@@ -170,7 +161,6 @@
     box-shadow: var(--shadow-md);
   }
   
-  /* Animations */
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -180,7 +170,6 @@
     animation: fadeIn 0.5s ease-in-out;
   }
   
-  /* Helper Classes */
   .text-center {
     text-align: center;
   }
@@ -207,7 +196,6 @@
     background-color: var(--bg-gray);
   }
   
-  /* Responsive */
   @media (max-width: 1400px) {
     .container {
       padding: 0 8%;

@@ -2,13 +2,12 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import "../styles/Services.css";
-import itServices from "../assets/images/it-services.png"; // You'll need to add this image
-import transportServices from "../assets/images/transport-services.png"; // You'll need to add this image
+import itServices from "../assets/images/it-services.png"; 
+import transportServices from "../assets/images/transport-services.png";
 
 const Services = () => {
   const { t } = useTranslation();
 
-  // Add animation on scroll effect
   useEffect(() => {
     const animateOnScroll = () => {
       const elements = document.querySelectorAll('.animate-on-scroll');
@@ -22,7 +21,7 @@ const Services = () => {
     };
 
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Run once on initial load
+    animateOnScroll();
     
     return () => {
       window.removeEventListener('scroll', animateOnScroll);

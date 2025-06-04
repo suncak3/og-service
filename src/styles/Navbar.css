@@ -19,7 +19,6 @@
     overflow: hidden;
   }
   
-  /* Professional hover effect with multiple elements */
   .nav-container a::before {
     content: '';
     position: absolute;
@@ -57,7 +56,6 @@
     height: 100%;
   }
   
-  /* Active state styling */
   .nav-container a.active {
     color: #F44336;
     border-bottom: 3px solid #F44336;
@@ -68,7 +66,6 @@
     display: none;
   }
   
-  /* Responsive Design */
   @media (max-width: 1400px) {
     .nav-container {
       padding: 0 8%;

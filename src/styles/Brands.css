@@ -40,10 +40,8 @@
   max-width: 100%;
   max-height: 120px;
   object-fit: contain;
-  /* Removed grayscale filter to keep logos colored at all times */
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   .brands-container {
     padding: 0 8%;

@@ -1,6 +1,3 @@
-/* Modern Home Page Styles */
-
-/* Animation styles for scroll effects */
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
@@ -12,7 +9,6 @@
   transform: translateY(0);
 }
 
-/* Hero Section with Slider */
 .hero-section {
   background-size: cover;
   background-position: center;
@@ -50,7 +46,6 @@
   pointer-events: none;
 }
 
-/* Arrows for all screen sizes */
 .slider-arrows {
   position: absolute;
   top: 50%;
@@ -106,9 +101,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-image: url('../assets/images/background.jpg');
-  background-size: cover;
-  background-position: center; */
   z-index: 1;
 }
 
@@ -130,7 +122,6 @@
   height: auto;
 }
 
-/* Second slide image specific styling */
 .hero-image-services {
   position: absolute;
   right: 10%;
@@ -173,13 +164,12 @@
 }
 
 .btn-hero:hover {
-  background-color: white; /* Change to white instead of orange */
-  color: #003B71; /* Blue text for contrast */
+  background-color: white;
+  color: #003B71;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
-/* Products Overview Section */
 .product-overview-section {
   padding: 100px 0;
   background-color: #f9fafb;
@@ -200,7 +190,6 @@
   z-index: 1;
 }
 
-/* Updated layout for the product overview section */
 .overview-content {
   display: flex;
   flex-direction: column;
@@ -301,7 +290,6 @@
   background-color: #F44336;
 }
 
-/* New grid layout for product categories */
 .product-categories-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -437,7 +425,6 @@
   width: 60px;
 }
 
-/* Why Choose Us Section */
 .why-choose-section {
   padding: 100px 0;
   background-color: #f8f9fa;
@@ -523,7 +510,6 @@
   line-height: 1.6;
 }
 
-/* Stats Section */
 .stats-section {
   background-color: #003366;
   padding: 80px 0;
@@ -531,7 +517,6 @@
   overflow: hidden;
 }
 
-/* Background pattern overlay */
 .stats-section::before {
   content: '';
   position: absolute;
@@ -545,7 +530,6 @@
   z-index: 1;
 }
 
-/* Create diagonal effect */
 .stats-section::after {
   content: '';
   position: absolute;
@@ -649,7 +633,6 @@
   background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
 }
 
-/* Brands Section */
 .brands-section {
   padding: 80px 0;
 }
@@ -685,7 +668,6 @@
   transition: all 0.3s ease;
 }
 
-/* CTA Section */
 .cta-section {
   background-color: #f8f9fa;
   padding: 80px 0;
@@ -727,12 +709,11 @@
 
 .btn-accent:hover {
   background-color: white !important;
-  color: #F44336 !important; /* Red text for brand consistency */
+  color: #F44336 !important;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive Design */
 @media (max-width: 1400px) {
   .hero-content {
     margin-left: 8%;
@@ -803,7 +784,6 @@
   }
 }
 
-/* For tablet screens */
 @media (max-width: 920px) {
   .slider-navigation {
     position: absolute;
@@ -853,16 +833,16 @@
   
   .hero-image,
   .hero-image-services {
-    display: none; /* Hide images on tablet screens */
+    display: none;
   }
 
   .hero-content {
     position: relative;
-    z-index: 3; /* Higher z-index to stay on top */
+    z-index: 3;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    max-width: 80%; /* Make the content wider */
+    max-width: 80%;
   }
   
   .hero-divider {
@@ -870,9 +850,8 @@
     margin-right: auto;
   }
 
-  /* Adjust animations for mobile */
   .animate-on-scroll {
-    transform: translateY(20px); /* Smaller animation distance on mobile */
+    transform: translateY(20px);
   }
   
   .hero-content.animate-on-scroll {
@@ -902,7 +881,7 @@
   }
   
   .slider-arrows {
-    max-width: 250px; /* Adjust for better visibility on smaller screens */
+    max-width: 250px;
   }
 }
 
@@ -913,7 +892,7 @@
   }
   
   .category-overlay h3 {
-    font-size: 1.6rem; /* Larger text for mobile view */
+    font-size: 1.6rem;
   }
   
   .overview-text {
@@ -953,14 +932,14 @@
 
 @media (max-width: 600px) {
   .hero-section {
-    height: 550px; /* Increased height to fit content better */
+    height: 550px;
     padding-top: 20px;
-    padding-bottom: 80px; /* Extra padding at bottom for navigation controls */
+    padding-bottom: 80px;
   }
 
   .hero-image,
   .hero-image-services {
-    display: none; /* Hide images on mobile screens */
+    display: none;
   }
   
   .hero-content {
@@ -968,13 +947,13 @@
     margin-right: auto;
     text-align: center;
     position: relative;
-    z-index: 3; /* Higher z-index to stay on top */
-    max-width: 90%; /* Make the content wider */
-    padding: 0 15px; /* Add horizontal padding */
+    z-index: 3;
+    max-width: 90%;
+    padding: 0 15px;
   }
   
   .hero-content h1 {
-    font-size: 1.6rem !important; /* Smaller font size for mobile */
+    font-size: 1.6rem !important;
     line-height: 1.3;
     margin-bottom: 1rem;
   }
@@ -982,7 +961,7 @@
   .hero-divider {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1.5rem; /* Reduce margin */
-    width: 80px; /* Slightly smaller divider */
+    margin-bottom: 1.5rem;
+    width: 80px;
   }
 }

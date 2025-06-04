@@ -15,7 +15,6 @@ import success from "../assets/icons/success.png"
 const Contact = () => {
   const { t } = useTranslation();
 
-  // Animation on scroll
   useEffect(() => {
     const animateOnScroll = () => {
       const elements = document.querySelectorAll('.animate-on-scroll');
@@ -29,8 +28,8 @@ const Contact = () => {
     };
 
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Run once on initial load
-    
+    animateOnScroll(); 
+
     return () => {
       window.removeEventListener('scroll', animateOnScroll);
     };
@@ -57,11 +56,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In a real application, this would send the form data to a server
     console.log("Form submitted:", formData);
     setFormSubmitted(true);
     
-    // Reset form after delay
     setTimeout(() => {
       setFormSubmitted(false);
       setFormData({

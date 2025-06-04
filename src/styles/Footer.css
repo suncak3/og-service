@@ -1,11 +1,9 @@
-/* Footer Styles */
 .footer {
     background-color: #003B71;
     color: white;
     font-family: 'Montserrat', sans-serif;
   }
   
-  /* Footer Top Section */
   .footer-top {
     padding: 60px 0 40px;
   }
@@ -16,7 +14,6 @@
     gap: 40px;
   }
   
-  /* Logo and Company Info */
   .footer-logo {
     margin-bottom: 20px;
   }
@@ -33,7 +30,6 @@
     color: rgba(255, 255, 255, 0.8);
   }
   
-  /* Contact Information */
   .footer-contact {
     margin-top: 25px;
   }
@@ -56,7 +52,6 @@
     color: rgba(255, 255, 255, 0.9);
   }
   
-  /* Column Titles */
   .footer-title {
     color: white;
     font-size: 18px;
@@ -76,7 +71,6 @@
     background-color: #F44336;
   }
   
-  /* Footer Links */
   .footer-links {
     list-style: none;
     padding: 0;
@@ -100,7 +94,6 @@
     transform: translateX(5px);
   }
   
-  /* Footer Bottom */
   .footer-bottom {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 20px 0;
@@ -113,7 +106,6 @@
     color: rgba(255, 255, 255, 0.7);
   }
   
-  /* Responsive Design */
   @media (max-width: 1200px) {
     .footer-columns {
       gap: 30px;

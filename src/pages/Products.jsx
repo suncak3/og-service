@@ -89,7 +89,6 @@ const Products = () => {
     }
   }, [location]);
   
-  // Scroll animation effect
   useEffect(() => {
     const animateOnScroll = () => {
       const elements = document.querySelectorAll('.animate-on-scroll');
@@ -103,14 +102,13 @@ const Products = () => {
     };
 
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Run once on initial load
+    animateOnScroll();
     
     return () => {
       window.removeEventListener('scroll', animateOnScroll);
     };
   }, []);
   
-  // Product categories and their brands
   const categories = [
     {
       id: "spare-parts",
@@ -118,14 +116,12 @@ const Products = () => {
       image: parts,
       description: t('products.descriptions.spareParts'),
       brands: [
-        // Original spare parts brands
         { id: "parker", name: "Parker", logo: parker },
         { id: "eaton", name: "Eaton", logo: eaton },
         { id: "manuli", name: "Manuli Hydraulics", logo: manuli },
         { id: "swagelok", name: "Swagelok", logo: swagelok },
         { id: "fleetguard", name: "Fleetguard", logo: fleetguard },
         { id: "gates", name: "Gates", logo: gates },
-        // Filter brands moved from filters category
         { id: "pall", name: "PALL", logo: pall },
         { id: "camfil", name: "Camfil", logo: camfil },
         { id: "higgins", name: "HIGGINS AND HEWINS", logo: HIGGINS_AND_HEWINS },
@@ -135,7 +131,6 @@ const Products = () => {
         { id: "indufil", name: "Indufil", logo: indufil },
         { id: "dinbro", name: "Dinbro", logo: dinbro },
         { id: "jasun", name: "Jasun", logo: jasun },
-        // Belt brands moved from belts category
         { id: "continental", name: "Continental (Contitech)", logo: continental },
         { id: "optibelt", name: "Optibelt", logo: optibelt },
         { id: "dunham", name: "Dunham Bush", logo: dunham }
@@ -223,10 +218,8 @@ const Products = () => {
     }
   ];
   
-  // Find active category
   const activeData = categories.find(cat => cat.id === activeCategory) || categories[0];
   
-  // Filter product types based on active category
   const filteredProductTypes = activeCategory === 'spare-parts' ? [
     { id: "filters", name: t('products.productTypes.filters') },
     { id: "belts", name: t('products.productTypes.belts') },
@@ -236,7 +229,6 @@ const Products = () => {
     { id: "consumables", name: t('products.productTypes.consumables') }
   ] : [];
   
-  // Product type descriptions with translations
   const getProductTypeContent = (type) => {
     const details = t(`products.productTypeDetails.${type}`, { returnObjects: true });
     
@@ -379,20 +371,17 @@ const Products = () => {
     }
   };
   
-  // Handle category change
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
     setActiveProductType(null);
     window.history.pushState({}, '', `/products?category=${category}`);
   };
   
-  // Handle product type change
   const handleProductTypeChange = (type) => {
     setActiveProductType(type);
     window.history.pushState({}, '', `/products?category=${activeCategory}&type=${type}`);
   };
   
-  // Get proper title for hero section
   const getHeroTitle = () => {
     if (activeCategory === "all") return t('products.hero.title');
     const category = categories.find(cat => cat.id === activeCategory);
@@ -494,7 +483,6 @@ const Products = () => {
               {/* Brands Display - Always visible */}
               <div className="brands-showcase">
                 {activeCategory === "all" ? (
-                  // Show a selection of brands when "All Products" is selected
                   <div className="brand-category">
                     <h3 className="brand-category-heading">{t('products.brands.featured')}</h3>
                     <div className="brands-logo-grid">
