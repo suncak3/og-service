@@ -370,5 +370,90 @@
     "description": "Our team of experts is ready to assist you with personalized recommendations.",
     "button": "Contact Us"
   }
+},
+
+"contact": {
+  "hero": {
+    "title": "Get In Touch",
+    "subtitle": "We're here to help with all your filtration needs"
+  },
+  "info": {
+    "tag": "CONTACT US",
+    "title": "Reach Out to Our Team",
+    "description": "We're dedicated to providing exceptional service and support. Contact us today and discover how our filtration solutions can enhance your operations.",
+    "visit": {
+      "title": "Visit Us",
+      "address1": "Astana, st. Konaeva 33",
+      "address2": "Office 303"
+    },
+    "call": {
+      "title": "Call Us",
+      "phone": "+7 707 466 1423",
+      "hours": "Mon - Fri, 9:00 - 17:00"
+    },
+    "email": {
+      "title": "Email Us",
+      "address": "info@ogservices.kz"
+    }
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "subtitle": "We'll get back to you as soon as possible",
+    "fields": {
+      "name": "Your Name*",
+      "email": "Your Email*",
+      "phone": "Phone Number",
+      "country": "Country",
+      "subject": "Subject*",
+      "message": "Your Message*"
+    },
+    "subjects": {
+      "general": "General Inquiry",
+      "product": "Product Information",
+      "technical": "Technical Support",
+      "quote": "Quote Request",
+      "other": "Other"
+    },
+    "submit": "Send Message",
+    "success": {
+      "title": "Thank You!",
+      "message": "Your message has been successfully sent. We will contact you very soon!"
+    }
+  },
+  "map": {
+    "tag": "OUR LOCATION",
+    "title": "Find Us Here"
+  },
+  "faq": {
+    "tag": "FREQUENTLY ASKED",
+    "title": "Questions & Answers",
+    "items": {
+      "industries": {
+        "question": "What industries do you serve?",
+        "answer": "We provide filtration solutions for a wide range of industries including oil & gas, manufacturing, power generation, food & beverage, pharmaceuticals, water treatment, mining, and chemical processing."
+      },
+      "shipping": {
+        "question": "Do you offer international shipping?",
+        "answer": "Yes, we ship our products to 99 countries worldwide. Our global distribution network ensures timely delivery regardless of your location."
+      },
+      "response": {
+        "question": "What is your typical response time?",
+        "answer": "Our customer service team typically responds to inquiries within 24 hours during business days. For urgent matters, we recommend calling our office directly."
+      },
+      "support": {
+        "question": "Do you provide technical support?",
+        "answer": "Absolutely. Our team of filtration experts is available to provide technical assistance, product recommendations, and troubleshooting support for all our products."
+      }
+    }
+  },
+  "brands": {
+    "tag": "OUR PARTNERS",
+    "title": "Trusted Brands We Represent"
+  },
+  "cta": {
+    "title": "Ready to Enhance Your Filtration Systems?",
+    "description": "Let our experts help you find the perfect solution for your specific needs.",
+    "button": "Contact Us Now"
+  }
 }
 }

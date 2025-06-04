@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import "../styles/Contact.css";
 import pall from "../assets/logos/pall.png"
 import afpro from "../assets/logos/afpro.png"
@@ -12,6 +13,8 @@ import success from "../assets/icons/success.png"
 
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   // Animation on scroll
   useEffect(() => {
     const animateOnScroll = () => {
@@ -77,8 +80,8 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="contact-hero">
         <div className="contact-hero-content">
-          <h1>Get In Touch</h1>
-          <p>We're here to help with all your filtration needs</p>
+          <h1>{t('contact.hero.title')}</h1>
+          <p>{t('contact.hero.subtitle')}</p>
         </div>
         <div className="hero-pattern"></div>
       </section>
@@ -89,11 +92,10 @@ const Contact = () => {
           <div className="contact-grid">
             {/* Contact Information */}
             <div className="contact-info animate-on-scroll">
-              <span className="section-tag">CONTACT US</span>
-              <h2>Reach Out to Our Team</h2>
+              <span className="section-tag">{t('contact.info.tag')}</span>
+              <h2>{t('contact.info.title')}</h2>
               <p className="info-text">
-                We're dedicated to providing exceptional service and support. 
-                Contact us today and discover how our filtration solutions can enhance your operations.
+                {t('contact.info.description')}
               </p>
               
               <div className="contact-card">
@@ -103,9 +105,9 @@ const Contact = () => {
                       <img src={location} alt="Address" />
                     </div>
                     <div className="contact-text">
-                      <h3>Visit Us</h3>
-                      <p>Astana, st. Konaeva 33</p>
-                      <p>Office 303</p>
+                      <h3>{t('contact.info.visit.title')}</h3>
+                      <p>{t('contact.info.visit.address1')}</p>
+                      <p>{t('contact.info.visit.address2')}</p>
                     </div>
                   </div>
                   
@@ -114,9 +116,9 @@ const Contact = () => {
                       <img src={phone} alt="Phone" />
                     </div>
                     <div className="contact-text">
-                      <h3>Call Us</h3>
-                      <p>+7 707 466 1423</p>
-                      <p>Mon - Fri, 9:00 - 17:00</p>
+                      <h3>{t('contact.info.call.title')}</h3>
+                      <p>{t('contact.info.call.phone')}</p>
+                      <p>{t('contact.info.call.hours')}</p>
                     </div>
                   </div>
                   
@@ -125,8 +127,8 @@ const Contact = () => {
                       <img src={mail} alt="Email" />
                     </div>
                     <div className="contact-text">
-                      <h3>Email Us</h3>
-                      <p> info@ogservices.kz</p>
+                      <h3>{t('contact.info.email.title')}</h3>
+                      <p>{t('contact.info.email.address')}</p>
                     </div>
                   </div>
                 </div>
@@ -137,8 +139,8 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="contact-form-container animate-on-scroll">
               <div className="form-header">
-                <h2>Send Us a Message</h2>
-                <p>We'll get back to you as soon as possible</p>
+                <h2>{t('contact.form.title')}</h2>
+                <p>{t('contact.form.subtitle')}</p>
               </div>
               
               {formSubmitted ? (
@@ -146,14 +148,14 @@ const Contact = () => {
                   <div className="success-icon">
                     <img src={success} alt="Success" />
                   </div>
-                  <h3>Thank You!</h3>
-                  <p>Your message has been successfully sent. We will contact you very soon!</p>
+                  <h3>{t('contact.form.success.title')}</h3>
+                  <p>{t('contact.form.success.message')}</p>
                 </div>
               ) : (
                 <form className="contact-form" onSubmit={handleSubmit}>
                   <div className="form-row">
                     <div className="form-group">
-                      <label htmlFor="name">Your Name*</label>
+                      <label htmlFor="name">{t('contact.form.fields.name')}</label>
                       <input
                         type="text"
                         id="name"
@@ -165,7 +167,7 @@ const Contact = () => {
                     </div>
                     
                     <div className="form-group">
-                      <label htmlFor="email">Your Email*</label>
+                      <label htmlFor="email">{t('contact.form.fields.email')}</label>
                       <input
                         type="email"
                         id="email"
@@ -179,7 +181,7 @@ const Contact = () => {
                   
                   <div className="form-row">
                     <div className="form-group">
-                      <label htmlFor="phone">Phone Number</label>
+                      <label htmlFor="phone">{t('contact.form.fields.phone')}</label>
                       <input
                         type="tel"
                         id="phone"
@@ -190,7 +192,7 @@ const Contact = () => {
                     </div>
                     
                     <div className="form-group">
-                      <label htmlFor="country">Country</label>
+                      <label htmlFor="country">{t('contact.form.fields.country')}</label>
                       <input
                         type="text"
                         id="country"
@@ -202,7 +204,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="form-group">
-                    <label htmlFor="subject">Subject*</label>
+                    <label htmlFor="subject">{t('contact.form.fields.subject')}</label>
                     <select
                       id="subject"
                       name="subject"
@@ -210,16 +212,16 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                     >
-                      <option value="General Inquiry">General Inquiry</option>
-                      <option value="Product Information">Product Information</option>
-                      <option value="Technical Support">Technical Support</option>
-                      <option value="Quote Request">Quote Request</option>
-                      <option value="Other">Other</option>
+                      <option value="General Inquiry">{t('contact.form.subjects.general')}</option>
+                      <option value="Product Information">{t('contact.form.subjects.product')}</option>
+                      <option value="Technical Support">{t('contact.form.subjects.technical')}</option>
+                      <option value="Quote Request">{t('contact.form.subjects.quote')}</option>
+                      <option value="Other">{t('contact.form.subjects.other')}</option>
                     </select>
                   </div>
                   
                   <div className="form-group">
-                    <label htmlFor="message">Your Message*</label>
+                    <label htmlFor="message">{t('contact.form.fields.message')}</label>
                     <textarea
                       id="message"
                       name="message"
@@ -231,7 +233,7 @@ const Contact = () => {
                   </div>
                   
                   <button type="submit" className="submit-button">
-                    Send Message
+                    {t('contact.form.submit')}
                     <span className="button-icon">→</span>
                   </button>
                 </form>
@@ -243,8 +245,8 @@ const Contact = () => {
         {/* Map Section */}
         <section className="map-section animate-on-scroll">
           <div className="section-header">
-            <span className="section-tag">OUR LOCATION</span>
-            <h2>Find Us Here</h2>
+            <span className="section-tag">{t('contact.map.tag')}</span>
+            <h2>{t('contact.map.title')}</h2>
           </div>
           
           <div className="map-wrapper">
@@ -263,29 +265,29 @@ const Contact = () => {
         {/* FAQ Section */}
         <section className="faq-section animate-on-scroll">
           <div className="section-header">
-            <span className="section-tag">FREQUENTLY ASKED</span>
-            <h2>Questions & Answers</h2>
+            <span className="section-tag">{t('contact.faq.tag')}</span>
+            <h2>{t('contact.faq.title')}</h2>
           </div>
           
           <div className="faq-grid">
             <div className="faq-item">
-              <h3>What industries do you serve?</h3>
-              <p>We provide filtration solutions for a wide range of industries including oil & gas, manufacturing, power generation, food & beverage, pharmaceuticals, water treatment, mining, and chemical processing.</p>
+              <h3>{t('contact.faq.items.industries.question')}</h3>
+              <p>{t('contact.faq.items.industries.answer')}</p>
             </div>
             
             <div className="faq-item">
-              <h3>Do you offer international shipping?</h3>
-              <p>Yes, we ship our products to 99 countries worldwide. Our global distribution network ensures timely delivery regardless of your location.</p>
+              <h3>{t('contact.faq.items.shipping.question')}</h3>
+              <p>{t('contact.faq.items.shipping.answer')}</p>
             </div>
             
             <div className="faq-item">
-              <h3>What is your typical response time?</h3>
-              <p>Our customer service team typically responds to inquiries within 24 hours during business days. For urgent matters, we recommend calling our office directly.</p>
+              <h3>{t('contact.faq.items.response.question')}</h3>
+              <p>{t('contact.faq.items.response.answer')}</p>
             </div>
             
             <div className="faq-item">
-              <h3>Do you provide technical support?</h3>
-              <p>Absolutely. Our team of filtration experts is available to provide technical assistance, product recommendations, and troubleshooting support for all our products.</p>
+              <h3>{t('contact.faq.items.support.question')}</h3>
+              <p>{t('contact.faq.items.support.answer')}</p>
             </div>
           </div>
         </section>
@@ -293,8 +295,8 @@ const Contact = () => {
         {/* Brands Section */}
         <section className="brands-section animate-on-scroll">
           <div className="section-header">
-            <span className="section-tag">OUR PARTNERS</span>
-            <h2>Trusted Brands We Represent</h2>
+            <span className="section-tag">{t('contact.brands.tag')}</span>
+            <h2>{t('contact.brands.title')}</h2>
           </div>
           <div className="brands-container animate-on-scroll">
               <div className="brands-slider">
@@ -322,10 +324,10 @@ const Contact = () => {
       <section className="contact-cta-section">
         <div className="container">
           <div className="cta-content animate-on-scroll">
-            <h2>Ready to Enhance Your Filtration Systems?</h2>
-            <p>Let our experts help you find the perfect solution for your specific needs.</p>
+            <h2>{t('contact.cta.title')}</h2>
+            <p>{t('contact.cta.description')}</p>
             <button className="cta-button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              Contact Us Now
+              {t('contact.cta.button')}
             </button>
           </div>
         </div>
