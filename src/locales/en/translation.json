@@ -1,46 +1,109 @@
 {
-    "header": {
-      "phone": "+7 707 466 1423",
-      "hours": "Mon - Fri 09:00 - 17:00",
-      "email": "info@ogservices.kz",
-      "emailLabel": "Email us",
-      "callLabel": "Call us",
-      "getQuote": "GET QUOTE",
-      "nav": {
-        "home": "HOME",
-        "about": "ABOUT",
-        "products": "PRODUCTS",
-        "services": "SERVICES",
-        "contact": "CONTACT US"
-      }
-    },
-    "footer": {
-      "about": "Regional leader in industrial filtration solutions, providing high-quality filters and belts to enhance operational efficiency and reliability.",
-      "phone": "+7 707 466 1423",
-      "email": "info@ogservices.kz",
-      "address": "Astana, st. Konaeva 33, Office 303",
-      "quickLinks": "Quick Links",
+  "header": {
+    "phone": "+7 707 466 1423",
+    "hours": "Mon - Fri 09:00 - 17:00",
+    "email": "info@ogservices.kz",
+    "emailLabel": "Email us",
+    "callLabel": "Call us",
+    "getQuote": "GET QUOTE",
+    "nav": {
+      "home": "HOME",
+      "about": "ABOUT",
+      "products": "PRODUCTS",
+      "services": "SERVICES",
+      "contact": "CONTACT US"
+    }
+  },
+  "footer": {
+    "about": "Regional leader in industrial filtration solutions, providing high-quality filters and belts to enhance operational efficiency and reliability.",
+    "phone": "+7 707 466 1423",
+    "email": "info@ogservices.kz",
+    "address": "Astana, st. Konaeva 33, Office 303",
+    "quickLinks": "Quick Links",
+    "products": "Products",
+    "services": "Services",
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
       "products": "Products",
       "services": "Services",
-      "nav": {
-        "home": "Home",
-        "about": "About Us",
-        "products": "Products",
-        "services": "Services",
-        "contact": "Contact Us"
+      "contact": "Contact Us"
+    },
+    "productCategories": {
+      "spareParts": "Spare Parts",
+      "piping": "Piping and Fittings",
+      "tools": "Tools",
+      "electrical": "Electrical equipment",
+      "equipment": "Processing equipment",
+      "valves": "Valves"
+    },
+    "serviceTypes": {
+      "it": "IT Services",
+      "transportation": "Transportation Services"
+    },
+    "copyright": "All Rights Reserved."
+  },
+  "home": {
+    "hero": {
+      "slide1": {
+        "title": "OG Services LLP supplies industrial materials and partners with major companies in Kazakhstan, Russia, and Uzbekistan.",
+        "button": "Explore Our Products"
       },
-      "productCategories": {
-        "spareParts": "Spare Parts",
-        "piping": "Piping and Fittings",
-        "tools": "Tools",
-        "electrical": "Electrical equipment",
-        "equipment": "Processing equipment",
-        "valves": "Valves"
-      },
-      "serviceTypes": {
-        "it": "IT Services",
-        "transportation": "Transportation Services"
-      },
-      "copyright": "All Rights Reserved."
+      "slide2": {
+        "title": "Comprehensive IT and transportation solutions for your industrial needs.",
+        "button": "Discover Our Services"
+      }
+    },
+    "productOverview": {
+      "title": "Comprehensive Industrial Solutions",
+      "description1": "We proudly supply a wide range of high-quality industrial products across Kazakhstan, Russia, and Uzbekistan, ensuring reliability and performance for every industrial application.",
+      "description2": "From filtration systems and drive belts to specialized equipment and components, our extensive product range powers industries across diverse sectors, delivering unmatched reliability and operational efficiency.",
+      "visionTitle": "Our Vision",
+      "vision": "To become the leading industrial supplier in Central Asia by providing innovative solutions, maintaining superior quality standards, and helping our clients achieve operational excellence.",
+      "button": "View All Products",
+      "categories": {
+        "spareParts": "SPARE PARTS",
+        "piping": "PIPING & FITTINGS",
+        "tools": "TOOLS",
+        "electrical": "ELECTRICAL",
+        "equipment": "PROCESSING EQUIPMENT",
+        "valves": "VALVES"
+      }
+    },
+    "whyChoose": {
+      "preTitle": "WHY CHOOSE OG SERVICES",
+      "title": "Our Benefits",
+      "benefits": {
+        "expertise": {
+          "title": "Industry Expertise",
+          "description": "With decades of experience, our team provides knowledgeable solutions tailored to your specific needs."
+        },
+        "quality": {
+          "title": "Premium Quality",
+          "description": "We partner with only the most trusted manufacturers to ensure superior product performance."
+        },
+        "global": {
+          "title": "Global Reach",
+          "description": "Our extensive distribution network ensures timely deliveries to customers worldwide."
+        },
+        "support": {
+          "title": "Dedicated Support",
+          "description": "Our customer service team is available to assist you with product selection and technical questions."
+        }
+      }
+    },
+    "stats": {
+      "experience": "YEARS OF EXPERIENCE",
+      "countries": "COUNTRIES",
+      "clients": "HAPPY CLIENTS"
+    },
+    "brands": {
+      "title": "Our Trusted Brands"
+    },
+    "cta": {
+      "title": "Ready to Enhance Your Industrial Operations?",
+      "description": "Contact our team today for expert advice and comprehensive product information.",
+      "button": "Get in Touch"
     }
   }
+}
