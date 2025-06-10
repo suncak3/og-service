@@ -98,14 +98,6 @@ const Contact = () => {
               <div className="contact-card">
                 <div className="contact-details-list">
                   <div className="contact-detail-item">
-                    <div className="contact-icon">
-                      <img src={location} alt="Address" />
-                    </div>
-                    <div className="contact-text">
-                      <h3>{t('contact.info.visit.title')}</h3>
-                      <p>{t('contact.info.visit.address1')}</p>
-                      <p>{t('contact.info.visit.address2')}</p>
-                    </div>
                   </div>
                   
                   <div className="contact-detail-item">

@@ -37,7 +37,7 @@ import kennametal from "../assets/logos/Kennametal.png";
 import enerpac from "../assets/logos/enerpac.png"; 
 import snapon from "../assets/logos/Snap-on.png"; 
 import knipex from "../assets/logos/Knipex.png"; 
-import atlascopco from "../assets/logos/atlas.png"; 
+import dewalt from "../assets/logos/dewalt.png"; 
 import bahco from "../assets/logos/bahco.png"; 
 import herrenknecht from "../assets/logos/herrenknecht.png"; 
 import wera from "../assets/logos/wera.png"; 
@@ -61,6 +61,7 @@ import imi from "../assets/logos/imi.png";
 import samson from "../assets/logos/samson.png"; 
 import wurth from "../assets/logos/wurth.svg"; 
 import bosch from "../assets/logos/bosch.png";
+import makita from "../assets/logos/makita.png";
 
 import parts from "../assets/images/Parts-removebg-preview.png";
 import fittings from "../assets/images/fittings-removebg-preview.png";
@@ -165,14 +166,15 @@ const Products = () => {
         { id: "enerpac", name: "Enerpac", logo: enerpac },
         { id: "snapon", name: "Snap-on", logo: snapon },
         { id: "knipex", name: "Knipex", logo: knipex },
-        { id: "atlascopco", name: "Atlas Copco", logo: atlascopco },
+        { id: "dewalt", name: "Dewalt", logo: dewalt },
         { id: "bahco", name: "Bahco", logo: bahco },
         { id: "herrenknecht", name: "Herrenknecht", logo: herrenknecht },
         { id: "wera", name: "Wera Tools", logo: wera },
         { id: "ridgid", name: "Ridgid", logo: ridgid },
         { id: "norbar", name: "Norbar", logo: norbar },
         { id: "wurth", name: "Wurth", logo: wurth },
-        { id: "bosch", name: "Bosch", logo: bosch }
+        { id: "bosch", name: "Bosch", logo: bosch },
+        { id: "makita", name: "Makita", logo: makita }
       ]
     },
     {
@@ -195,7 +197,7 @@ const Products = () => {
       image: equipment,
       description: t('products.descriptions.equipment'),
       brands: [
-        { id: "atlascopco", name: "Atlas Copco", logo: atlascopco },
+        { id: "dewalt", name: "Dewalt", logo: dewalt },
         { id: "ingersollrand", name: "Ingersoll Rand", logo: ingersollrand },
         { id: "sullair", name: "Sullair", logo: sullair },
         { id: "kaeser", name: "Kaeser Compressors", logo: kaeser },
@@ -492,7 +494,7 @@ const Products = () => {
                         { id: "fleetguard", name: "Fleetguard", logo: fleetguard },
                         { id: "gates", name: "Gates", logo: gates },
                         { id: "schneider", name: "Schneider Electric", logo: schneider },
-                        { id: "atlascopco", name: "Atlas Copco", logo: atlascopco },
+                        { id: "dewalt", name: "Dewalt", logo: dewalt },
                         { id: "emerson", name: "Emerson Electric", logo: emerson },
                         { id: "sandvik", name: "Sandvik", logo: sandvik },
                         { id: "victaulic", name: "Victaulic", logo: victaulic }
