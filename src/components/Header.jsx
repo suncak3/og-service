@@ -94,10 +94,6 @@ const Header = () => {
                         <p className="info-label">{t('header.emailLabel')}</p>
                         <p className="info-value">{t('header.email')}</p>
                     </div>
-                    <div>
-                        <p className="info-label">{t('header.callLabel')}</p>
-                        <p className="info-value">{t('header.phone')}</p>
-                    </div>
                     <button className="header-button" onClick={handleGetQuote}>
                         {t('header.getQuote')}
                     </button>
